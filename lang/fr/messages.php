@@ -192,4 +192,7 @@ return [
     'Article suivant' => 'Article suivant',
     'Article précédent' => 'Article précédent',
     'Aucun article similaire pour le moment' => 'Aucun article similaire pour le moment',
+
+    // Loading
+    'Chargement...' => 'Chargement...',
 ];

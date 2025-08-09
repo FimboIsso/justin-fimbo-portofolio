@@ -8,97 +8,102 @@
 @section('content')
     <!-- Hero Section -->
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <!-- Animated Gradient Background -->
-        <div class="absolute inset-0 gradient-shift"></div>
-        <div class="absolute inset-0 bg-black/10"></div>
+        <!-- Ultra Modern Animated Background -->
+        <div class="absolute inset-0 aurora-bg"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-black/10"></div>
 
-        <!-- 3D Floating Elements -->
+        <!-- Simplified Floating Elements -->
         <div class="absolute inset-0 overflow-hidden">
-            <div class="floating-element w-32 h-32 bg-white/10 rounded-full morphing-shape top-20 left-10"></div>
-            <div class="floating-element w-24 h-24 bg-white/15 rounded-full morphing-shape top-40 right-20"
-                style="animation-delay: -2s;"></div>
-            <div class="floating-element w-40 h-40 bg-white/5 rounded-full morphing-shape bottom-32 left-1/4"
-                style="animation-delay: -4s;"></div>
-            <div class="floating-element w-28 h-28 bg-white/10 rounded-full morphing-shape bottom-20 right-1/3"
-                style="animation-delay: -6s;"></div>
-
-            <!-- Geometric Shapes -->
-            <div class="absolute top-1/4 left-1/4 w-16 h-16 border border-white/20 rotate-45 float-animation"
-                style="animation-delay: -1s;"></div>
+            <!-- Subtle Geometric Shapes -->
+            <div class="absolute top-1/4 left-1/4 w-16 h-16 border border-white/20 rotate-45 float-animation"></div>
             <div class="absolute top-3/4 right-1/4 w-12 h-12 border border-white/20 rotate-12 float-animation"
-                style="animation-delay: -3s;"></div>
+                style="animation-delay: -4s;"></div>
+            <div class="absolute bottom-1/3 right-10 w-20 h-20 bg-white/5 rounded-full float-animation"
+                style="animation-delay: -2s;"></div>
         </div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="fade-in-up">
-                <!-- Profile Picture -->
-                <div class="mb-8 flex justify-center">
+                <!-- Enhanced Profile Picture -->
+                <div class="mb-12 flex justify-center">
                     <div class="relative">
-                        <!-- Glowing Ring Effect -->
+                        <!-- Simplified Glowing Ring -->
                         <div
-                            class="absolute -inset-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full blur-lg opacity-30 pulse-glow">
+                            class="absolute -inset-4 bg-gradient-to-r from-black via-gray-600 to-black rounded-full blur-lg opacity-30">
                         </div>
 
                         <!-- Main Profile Container -->
                         <div
-                            class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl float-animation">
+                            class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-300 hover:scale-105">
                             <img src="{{ asset('images/justin-profile.svg') }}" alt="Justin Fimbo"
                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                        </div>
 
-                            <!-- Overlay Gradient -->
-                            <div class="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-white/10">
+                        <!-- Enhanced Status Badge -->
+                        <div
+                            class="absolute -bottom-3 -right-3 w-18 h-18 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full border-4 border-white flex items-center justify-center shadow-xl pulse-glow hover-glow magnetic">
+                            <i class="fas fa-check text-white text-xl"></i>
+                            <div
+                                class="absolute inset-0 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 blur-md opacity-50">
                             </div>
                         </div>
 
-                        <!-- Status Badge -->
-                        <div
-                            class="absolute -bottom-2 -right-2 w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full border-4 border-white flex items-center justify-center shadow-lg pulse-glow">
-                            <i class="fas fa-check text-white text-xl"></i>
-                        </div>
-
-                        <!-- Floating Tech Icons -->
-                        <div class="absolute -top-4 -left-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs float-animation"
+                        <!-- Enhanced Floating Tech Icons -->
+                        <div class="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
                             style="animation-delay: -1s;">
                             <i class="fab fa-laravel"></i>
                         </div>
-                        <div class="absolute -top-4 -right-4 w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center text-white text-xs float-animation"
+                        <div class="absolute -top-6 -right-6 w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
                             style="animation-delay: -2s;">
                             <i class="fab fa-flutter"></i>
                         </div>
-                        <div class="absolute -bottom-4 -left-4 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs float-animation"
+                        <div class="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
                             style="animation-delay: -3s;">
                             <i class="fab fa-java"></i>
+                        </div>
+                        <div class="absolute top-1/2 -left-8 w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm float-animation hover-glow magnetic"
+                            style="animation-delay: -4s; transform: translateY(-50%);">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-8 w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-sm float-animation hover-glow magnetic"
+                            style="animation-delay: -5s; transform: translateY(-50%);">
+                            <i class="fas fa-rocket"></i>
                         </div>
                     </div>
                 </div>
 
-                <!-- Main Title -->
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-                    <span class="block text-white/90 slide-in-left">{{ __('messages.Salut, je suis') }}</span>
-                    <span class="block text-3d text-glow scale-in" style="animation-delay: 0.3s;">Justin Fimbo</span>
+                <!-- Simplified Main Title -->
+                <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-8">
+                    <span class="block text-white/90 font-light">{{ __('messages.Salut, je suis') }}</span>
+                    <span class="block text-white font-black">Justin Fimbo</span>
                 </h1>
 
-                <!-- Subtitle -->
-                <p class="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto slide-in-right"
-                    style="animation-delay: 0.5s;">
+                <!-- Simplified Subtitle -->
+                <p class="text-xl md:text-3xl lg:text-4xl text-white/90 mb-10 max-w-4xl mx-auto font-medium">
                     {{ __('messages.Développeur & Entrepreneur innovant') }}
                 </p>
 
-                <!-- Description -->
-                <p class="text-lg text-white/80 mb-12 max-w-4xl mx-auto fade-in-up" style="animation-delay: 0.7s;">
-                    {{ __('Expert en Laravel, Flutter & Java | PDG d\'UZASHOP | Créateur d\'ERP multisectoriels adaptés au contexte africain | Basé à Beni, RDC') }}
-                </p>
+                <!-- Enhanced Description with Typewriter Effect -->
+                <div class="text-lg md:text-xl text-white/90 mb-14 max-w-5xl mx-auto fade-in-up"
+                    style="animation-delay: 0.7s;">
+                    <div class="glass-morphism p-6 rounded-2xl backdrop-blur-xl">
+                        <p class="text-matrix">
+                            {{ __('Expert en Laravel, Flutter & Java | PDG d\'UZASHOP | Créateur d\'ERP multisectoriels adaptés au contexte africain | Basé à Beni, RDC') }}
+                        </p>
+                    </div>
+                </div>
 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 scale-in"
+                <!-- Enhanced CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-8 scale-in"
                     style="animation-delay: 0.9s;">
-                    <a href="{{ asset('files/Justin_Fimbo_CV.pdf') }}" download class="btn-modern inline-flex items-center">
-                        <i class="fas fa-download mr-2"></i>
+                    <a href="{{ asset('files/Justin_Fimbo_CV.pdf') }}" download
+                        class="btn-modern inline-flex items-center text-lg px-8 py-4 hover-lift magnetic">
+                        <i class="fas fa-download mr-3 text-xl"></i>
                         {{ __('messages.Télécharger CV') }}
                     </a>
                     <a href="#contact"
-                        class="glass-card px-6 py-3 text-white hover:bg-white/20 transition-all duration-300 inline-flex items-center border border-white/30 rounded-full">
-                        <i class="fas fa-envelope mr-2"></i>
+                        class="btn-glass px-8 py-4 text-white inline-flex items-center text-lg hover-glow magnetic">
+                        <i class="fas fa-envelope mr-3 text-xl"></i>
                         {{ __('messages.Me contacter') }}
                     </a>
                 </div>
@@ -219,32 +224,58 @@
                         </div>
                     </div>
 
-                    <!-- Visual Content -->
+                    <!-- Enhanced Visual Content -->
                     <div class="relative">
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="space-y-4">
-                                <div class="bg-blue-100 p-6 rounded-lg card-hover">
-                                    <i class="fas fa-code text-blue-600 text-3xl mb-4"></i>
-                                    <h4 class="font-semibold text-gray-900 mb-2">{{ __('messages.Développement') }}</h4>
-                                    <p class="text-sm text-gray-600">
-                                        {{ __('messages.Applications web & mobiles modernes') }}</p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="space-y-6">
+                                <div class="card-3d cyber-border-animated hover-tilt magnetic">
+                                    <div class="content p-6">
+                                        <div
+                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4 hover-glow">
+                                            <i class="fas fa-code text-white text-2xl"></i>
+                                        </div>
+                                        <h4 class="font-bold text-gray-900 mb-3 text-lg">
+                                            {{ __('messages.Développement') }}</h4>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            {{ __('messages.Applications web & mobiles modernes') }}</p>
+                                    </div>
                                 </div>
-                                <div class="bg-orange-100 p-6 rounded-lg card-hover">
-                                    <i class="fas fa-chart-line text-orange-600 text-3xl mb-4"></i>
-                                    <h4 class="font-semibold text-gray-900 mb-2">{{ __('messages.Business') }}</h4>
-                                    <p class="text-sm text-gray-600">{{ __('messages.Solutions ERP sur mesure') }}</p>
+                                <div class="card-3d gradient-border-animated hover-tilt magnetic">
+                                    <div class="content p-6">
+                                        <div
+                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 hover-glow">
+                                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                                        </div>
+                                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Business') }}
+                                        </h4>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            {{ __('messages.Solutions ERP sur mesure') }}</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="space-y-4 mt-8">
-                                <div class="bg-green-100 p-6 rounded-lg card-hover">
-                                    <i class="fas fa-mobile-alt text-green-600 text-3xl mb-4"></i>
-                                    <h4 class="font-semibold text-gray-900 mb-2">{{ __('messages.Mobile') }}</h4>
-                                    <p class="text-sm text-gray-600">{{ __('messages.Apps Flutter natives') }}</p>
+                            <div class="space-y-6 mt-8">
+                                <div class="card-3d glass-morphism hover-tilt magnetic">
+                                    <div class="p-6">
+                                        <div
+                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full mb-4 hover-glow">
+                                            <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                                        </div>
+                                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Mobile') }}</h4>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            {{ __('messages.Apps Flutter natives') }}</p>
+                                    </div>
                                 </div>
-                                <div class="bg-purple-100 p-6 rounded-lg card-hover">
-                                    <i class="fas fa-rocket text-purple-600 text-3xl mb-4"></i>
-                                    <h4 class="font-semibold text-gray-900 mb-2">{{ __('messages.Innovation') }}</h4>
-                                    <p class="text-sm text-gray-600">{{ __('messages.Technologies de pointe') }}</p>
+                                <div class="card-3d neumorphism hover-tilt magnetic">
+                                    <div class="p-6">
+                                        <div
+                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mb-4 hover-glow">
+                                            <i class="fas fa-rocket text-white text-2xl"></i>
+                                        </div>
+                                        <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Innovation') }}
+                                        </h4>
+                                        <p class="text-gray-600 text-sm leading-relaxed">
+                                            {{ __('messages.Technologies de pointe') }}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -268,78 +299,136 @@
                     </p>
                 </div>
 
-                <!-- Skills Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                <!-- Enhanced Skills Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
                     <!-- Laravel -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-red-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-laravel text-red-600 text-2xl"></i>
+                    <div class="card-3d glass-morphism text-center hover-tilt magnetic reveal-scale" style="--i: 1">
+                        <div class="p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fab fa-laravel text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Laravel</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Framework PHP') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full" style="width: 95%">
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">Laravel</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Framework PHP') }}</p>
                     </div>
 
                     <!-- Flutter -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-flutter text-blue-600 text-2xl"></i>
+                    <div class="card-3d gradient-border-animated text-center hover-tilt magnetic reveal-scale"
+                        style="--i: 2">
+                        <div class="content p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fab fa-flutter text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Flutter</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Apps mobiles') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full"
+                                    style="width: 90%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">Flutter</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Apps mobiles') }}</p>
                     </div>
 
                     <!-- Java -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-orange-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-java text-orange-600 text-2xl"></i>
+                    <div class="card-3d cyber-border text-center hover-tilt magnetic reveal-scale" style="--i: 3">
+                        <div class="cyber-border-content p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fab fa-java text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Java</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Android natif') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full"
+                                    style="width: 85%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">Java</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Android natif') }}</p>
                     </div>
 
                     <!-- API REST -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-green-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-code text-green-600 text-2xl"></i>
+                    <div class="card-3d neumorphism text-center hover-tilt magnetic reveal-scale" style="--i: 4">
+                        <div class="p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fas fa-code text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">API REST</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Services web') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full"
+                                    style="width: 92%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">API REST</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Services web') }}</p>
                     </div>
 
                     <!-- MySQL -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-database text-blue-600 text-2xl"></i>
+                    <div class="card-3d glass-morphism text-center hover-tilt magnetic reveal-scale" style="--i: 5">
+                        <div class="p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fas fa-database text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">MySQL</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Base de données') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full"
+                                    style="width: 88%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">MySQL</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Base de données') }}</p>
                     </div>
 
                     <!-- Git -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-gray-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-git-alt text-gray-600 text-2xl"></i>
+                    <div class="card-3d neumorphism text-center hover-tilt magnetic reveal-scale" style="--i: 6">
+                        <div class="p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-gray-600 to-gray-700 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fab fa-git-alt text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Git</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Contrôle de version') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-gray-600 to-gray-700 h-2 rounded-full"
+                                    style="width: 93%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">Git</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Contrôle de version') }}</p>
                     </div>
 
                     <!-- Docker -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fab fa-docker text-blue-600 text-2xl"></i>
+                    <div class="card-3d cyber-border-animated text-center hover-tilt magnetic reveal-scale"
+                        style="--i: 7">
+                        <div class="content p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fab fa-docker text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Docker</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Conteneurisation') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 rounded-full"
+                                    style="width: 80%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">Docker</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Conteneurisation') }}</p>
                     </div>
 
                     <!-- UX/UI -->
-                    <div class="bg-white p-6 rounded-lg shadow-md card-hover text-center">
-                        <div class="w-16 h-16 mx-auto mb-4 bg-purple-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-palette text-purple-600 text-2xl"></i>
+                    <div class="card-3d gradient-border text-center hover-tilt magnetic reveal-scale" style="--i: 8">
+                        <div class="gradient-border-content p-6">
+                            <div
+                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                                <i class="fas fa-palette text-white text-3xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-3 text-lg">UX/UI</h3>
+                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Design utilisateur') }}</p>
+                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full"
+                                    style="width: 87%"></div>
+                            </div>
                         </div>
-                        <h3 class="font-semibold text-gray-900 mb-2">UX/UI</h3>
-                        <p class="text-sm text-gray-600">{{ __('messages.Design utilisateur') }}</p>
                     </div>
                 </div>
 

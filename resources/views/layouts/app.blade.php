@@ -46,6 +46,12 @@
 </head>
 
 <body class="font-sans antialiased bg-white text-gray-900">
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+        <p class="text-white mt-4 text-lg font-semibold">{{ __('messages.Chargement...') }}</p>
+    </div>
+
     <!-- Navigation -->
     @include('components.navigation')
 
@@ -70,24 +76,7 @@
     <script>
         // Smooth scrolling for navigation links
         document.addEventListener('DOMContentLoaded', function() {
-            // Intersection Observer for fade-in animations
-            const observerOptions = {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px'
-            };
-
-            const observer = new IntersectionObserver(function(entries) {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, observerOptions);
-
-            // Observe all elements with fade-in-up class
-            document.querySelectorAll('.fade-in-up').forEach(el => {
-                observer.observe(el);
-            });
+            // Legacy fade-in animation (will be handled by advanced observer below)
 
             // Back to top button functionality
             const backToTopButton = document.getElementById('backToTop');
@@ -139,6 +128,120 @@
                     }
                 });
             }
+
+            // Advanced Scroll Animations with Intersection Observer
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            // Create multiple observers for different animation types
+            const revealObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Optional: Stop observing after animation
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all reveal elements
+            document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-flip').forEach(
+                el => {
+                    revealObserver.observe(el);
+                });
+
+            // Staggered animations for skill cards
+            const staggerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const delay = parseInt(entry.target.style.getPropertyValue('--i') || 0) *
+                            150;
+                        setTimeout(() => {
+                            entry.target.classList.add('active');
+                        }, delay);
+                        staggerObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe staggered elements
+            document.querySelectorAll('.stagger-animation, [style*="--i"]').forEach(el => {
+                staggerObserver.observe(el);
+            });
+
+            // Enhanced Magnetic Effect for Interactive Elements
+            document.querySelectorAll('.magnetic').forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const deltaX = (x - centerX) / centerX;
+                    const deltaY = (y - centerY) / centerY;
+
+                    element.style.transform =
+                        `translate(${deltaX * 10}px, ${deltaY * 10}px) scale(1.05)`;
+                });
+
+                element.addEventListener('mouseleave', () => {
+                    element.style.transform = 'translate(0px, 0px) scale(1)';
+                });
+            });
+
+            // Parallax Effect for Floating Elements
+            window.addEventListener('scroll', () => {
+                const scrolled = window.pageYOffset;
+                const parallax = document.querySelectorAll('.parallax-element');
+
+                parallax.forEach(element => {
+                    const speed = element.dataset.speed || 0.5;
+                    const yPos = -(scrolled * speed);
+                    element.style.transform = `translate3d(0, ${yPos}px, 0)`;
+                });
+            });
+
+            // Advanced Tilt Effect for 3D Cards
+            document.querySelectorAll('.tilt-effect').forEach(element => {
+                element.addEventListener('mousemove', (e) => {
+                    const rect = element.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    const centerX = rect.width / 2;
+                    const centerY = rect.height / 2;
+                    const rotateX = (y - centerY) / 4;
+                    const rotateY = (centerX - x) / 4;
+
+                    element.style.transform =
+                        `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.05, 1.05, 1.05)`;
+                });
+
+                element.addEventListener('mouseleave', () => {
+                    element.style.transform =
+                        'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                });
+            });
+
+            // Loading Animation
+            const loader = document.querySelector('.loader');
+            if (loader) {
+                window.addEventListener('load', () => {
+                    setTimeout(() => {
+                        loader.classList.add('hidden');
+                    }, 500);
+                });
+            }
+
+            // Smooth reveal on page load
+            setTimeout(() => {
+                document.querySelectorAll('.fade-in-up:not(.animate)').forEach((el, index) => {
+                    setTimeout(() => {
+                        el.classList.add('animate');
+                    }, index * 100);
+                });
+            }, 300);
         });
     </script>
 

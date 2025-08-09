@@ -9,57 +9,72 @@
                 </a>
             </div>
 
-            <!-- Desktop Navigation -->
-            <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-8">
+            <!-- Enhanced Desktop Navigation -->
+            <div class="hidden md:block relative">
+                <div class="ml-10 flex items-baseline space-x-1 relative">
+                    <!-- Navigation Indicator -->
+                    <div id="nav-indicator"
+                        class="absolute bottom-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full transition-all duration-300 ease-out opacity-0">
+                    </div>
+
                     <a href="{{ request()->routeIs('portfolio.index') ? '#home' : route('portfolio.index') . '#home' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Accueil') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Accueil') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ request()->routeIs('portfolio.index') ? '#about' : route('portfolio.index') . '#about' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.À propos') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.À propos') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ request()->routeIs('portfolio.index') ? '#skills' : route('portfolio.index') . '#skills' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Compétences') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Compétences') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ request()->routeIs('portfolio.index') ? '#projects' : route('portfolio.index') . '#projects' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Projets') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Projets') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ request()->routeIs('portfolio.index') ? '#experience' : route('portfolio.index') . '#experience' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Expérience') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Expérience') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ route('blog.index') }}"
-                        class="nav-link {{ request()->routeIs('blog.*') ? 'active' : '' }} text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Blog') }}
+                        class="nav-link relative {{ request()->routeIs('blog.*') ? 'active text-blue-600' : 'text-gray-700' }} hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Blog') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                     <a href="{{ request()->routeIs('portfolio.index') ? '#contact' : route('portfolio.index') . '#contact' }}"
-                        class="nav-link text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200">
-                        {{ __('messages.Contact') }}
+                        class="nav-link relative text-gray-700 hover:text-blue-600 px-4 py-3 text-sm font-medium transition-all duration-300 rounded-lg hover:bg-blue-50 magnetic">
+                        <span class="relative z-10">{{ __('messages.Contact') }}</span>
+                        <div class="nav-indicator"></div>
                     </a>
                 </div>
             </div>
 
             <!-- Language Switcher & Mobile Menu Button -->
             <div class="flex items-center space-x-4">
-                <!-- Language Switcher -->
+                <!-- Enhanced Language Switcher -->
                 <button id="language-toggle"
-                    class="text-gray-700 hover:text-blue-600 p-2 rounded-md transition-colors duration-200">
-                    <i class="fas fa-globe"></i>
-                    <span class="ml-1 text-sm">{{ strtoupper(app()->getLocale()) }}</span>
+                    class="glass-card text-gray-700 hover:text-blue-600 p-3 rounded-full transition-all duration-300 hover-glow magnetic flex items-center space-x-2">
+                    <i class="fas fa-globe text-lg"></i>
+                    <span class="text-sm font-medium">{{ strtoupper(app()->getLocale()) }}</span>
                 </button>
 
-                <!-- Mobile menu button -->
+                <!-- Enhanced Mobile menu button -->
                 <div class="md:hidden">
                     <button id="mobile-menu-button"
-                        class="text-gray-700 hover:text-blue-600 p-2 rounded-md transition-colors duration-200">
-                        <div class="w-6 h-6 flex flex-col justify-center">
-                            <span class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300"></span>
-                            <span class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 mt-1"></span>
-                            <span class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 mt-1"></span>
+                        class="glass-card text-gray-700 hover:text-blue-600 p-3 rounded-lg transition-all duration-300 hover-glow magnetic">
+                        <div class="w-6 h-6 flex flex-col justify-center space-y-1">
+                            <span
+                                class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out"></span>
+                            <span
+                                class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out"></span>
+                            <span
+                                class="bg-current block h-0.5 w-6 rounded-sm transition-all duration-300 ease-out"></span>
                         </div>
                     </button>
                 </div>
