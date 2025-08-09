@@ -20,7 +20,7 @@
             <div style="animation-delay: -2s;"></div>
         </div>
 
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center" style="margin-top: 100px;">
             <div>
                 <!-- Enhanced Profile Picture -->
                 <div class="mb-8 flex justify-center">
@@ -33,7 +33,7 @@
                         <!-- Main Profile Container -->
                         <div
                             class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('images/justin-profile.svg') }}" alt="Justin Fimbo"
+                            <img src="{{ asset('images/justin-profile.png') }}" alt="Justin Fimbo"
                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
                         </div>
 
