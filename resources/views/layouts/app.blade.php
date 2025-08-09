@@ -62,7 +62,7 @@
 
     <!-- Back to Top Button -->
     <button id="backToTop"
-        class="fixed bottom-6 right-6 bg-primary-600 hover:bg-primary-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform scale-0 z-50">
+        class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-300 transform scale-0 z-50">
         <i class="fas fa-arrow-up"></i>
     </button>
 

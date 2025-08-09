@@ -7,6 +7,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\Admin\AuthController as AdminAuthController;
 use App\Http\Controllers\Admin\PostController as AdminPostController;
+use App\Http\Controllers\Admin\AIController as AdminAIController;
 
 // Portfolio routes
 Route::get('/', [PortfolioController::class, 'index'])->name('portfolio.index');
@@ -35,4 +36,9 @@ Route::middleware('admin')->prefix('admin')->name('admin.')->group(function () {
     Route::get('/posts/{id}/edit', [AdminPostController::class, 'edit'])->name('posts.edit');
     Route::put('/posts/{id}', [AdminPostController::class, 'update'])->name('posts.update');
     Route::delete('/posts/{id}', [AdminPostController::class, 'destroy'])->name('posts.destroy');
+
+    // AI assistant
+    Route::post('/ai/generate', [AdminAIController::class, 'generate'])->name('ai.generate');
+    Route::post('/ai/seo', [AdminAIController::class, 'seo'])->name('ai.seo');
+    Route::post('/ai/enhance', [AdminAIController::class, 'enhance'])->name('ai.enhance');
 });

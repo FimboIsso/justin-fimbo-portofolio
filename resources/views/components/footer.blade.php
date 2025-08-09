@@ -7,7 +7,7 @@
                 <div class="mb-4">
                     <h3 class="text-2xl font-bold gradient-text mb-2">Justin Fimbo</h3>
                     <p class="text-gray-300 text-sm leading-relaxed">
-                        {{ __('Développeur informatique confirmé et PDG d\'UZASHOP, basé à Beni, RDC. Expert en Laravel, Flutter et Java, spécialisé dans la création d\'ERP multisectoriels adaptés au contexte africain.') }}
+                        {{ __('messages.Développeur informatique confirmé et PDG d\'UZASHOP, basé à Beni, RDC. Expert en Laravel, Flutter et Java, spécialisé dans la création d\'ERP multisectoriels adaptés au contexte africain.') }}
                     </p>
                 </div>
 
@@ -21,7 +21,7 @@
                         class="text-gray-400 hover:text-white transition-colors duration-200">
                         <i class="fab fa-github text-xl"></i>
                     </a>
-                    <a href="mailto:justin.fimbo@uzashop.com"
+                    <a href="mailto:fimbo.isso@uzashop.co"
                         class="text-gray-400 hover:text-white transition-colors duration-200">
                         <i class="fas fa-envelope text-xl"></i>
                     </a>
@@ -29,7 +29,7 @@
                         class="text-gray-400 hover:text-white transition-colors duration-200">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
-                    <a href="https://wa.me/243123456789" target="_blank"
+                    <a href="https://wa.me/243997643592" target="_blank"
                         class="text-gray-400 hover:text-white transition-colors duration-200">
                         <i class="fab fa-whatsapp text-xl"></i>
                     </a>
@@ -83,11 +83,11 @@
                     </li>
                     <li class="flex items-center text-gray-400">
                         <i class="fas fa-phone mr-2"></i>
-                        +243 123 456 789
+                        +243 997 643 592
                     </li>
                     <li class="flex items-center text-gray-400">
                         <i class="fas fa-envelope mr-2"></i>
-                        justin.fimbo@uzashop.com
+                        fimbo.isso@uzashop.co
                     </li>
                     <li class="flex items-center text-gray-400">
                         <i class="fas fa-globe mr-2"></i>

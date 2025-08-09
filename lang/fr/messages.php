@@ -28,10 +28,10 @@ return [
 
     // About Section
     'À propos de moi' => 'À propos de moi',
-    'Découvrez mon parcours et ma passion pour le développement informatique' => 'Découvrez mon parcours et ma passion pour le développement informatique',
+    'Découvrez mon parcours et ma passion pour le développement informatique' => 'Mon parcours en bref',
     'Développeur informatique confirmé & Entrepreneur' => 'Développeur informatique confirmé & Entrepreneur',
-    'Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.' => 'Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.',
-    'Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.' => 'Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.',
+    'Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.' => 'Développeur full‑stack (Laravel, Flutter, Java). PDG d’UZASHOP à Beni (RDC).',
+    'Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.' => 'Je conçois des ERP multisectoriels adaptés à l’Afrique, avec synchronisation hors‑ligne et UX soignée.',
     'Expert Laravel & Flutter avec 5+ années d\'expérience' => 'Expert Laravel & Flutter avec 5+ années d\'expérience',
     'PDG et fondateur d\'UZASHOP' => 'PDG et fondateur d\'UZASHOP',
     'Spécialiste des ERP multisectoriels' => 'Spécialiste des ERP multisectoriels',
@@ -40,6 +40,7 @@ return [
     'Nom:' => 'Nom:',
     'Localisation:' => 'Localisation:',
     'Email:' => 'Email:',
+    'location_beni' => 'Beni, RDC',
     'Entreprise:' => 'Entreprise:',
     'Développement' => 'Développement',
     'Applications web & mobiles modernes' => 'Applications web & mobiles modernes',
@@ -52,7 +53,7 @@ return [
 
     // Skills Section
     'Mes Compétences' => 'Mes Compétences',
-    'Technologies et outils que je maîtrise pour créer des solutions innovantes' => 'Technologies et outils que je maîtrise pour créer des solutions innovantes',
+    'Technologies et outils que je maîtrise pour créer des solutions innovantes' => 'Stack & outils',
     'Framework PHP' => 'Framework PHP',
     'Apps mobiles' => 'Apps mobiles',
     'Android natif' => 'Android natif',
@@ -68,25 +69,25 @@ return [
     // Projects Section
     'Mes Projets' => 'Mes Projets',
     'Découvrez quelques-uns de mes projets les plus significatifs' => 'Découvrez quelques-uns de mes projets les plus significatifs',
-    'Système de point de vente complet avec gestion de stock, facturation et rapports analytiques.' => 'Système de point de vente complet avec gestion de stock, facturation et rapports analytiques.',
+    'Système de point de vente complet avec gestion de stock, facturation et rapports analytiques.' => 'POS complet: stock, facturation, rapports.',
     'Voir démo' => 'Voir démo',
     'Code' => 'Code',
     'ERP Santé' => 'ERP Santé',
-    'Système de gestion hospitalière avec dossiers patients, planification et facturation médicale.' => 'Système de gestion hospitalière avec dossiers patients, planification et facturation médicale.',
+    'Système de gestion hospitalière avec dossiers patients, planification et facturation médicale.' => 'Dossiers, planification, facturation.',
     'Site web' => 'Site web',
     'ERP Hôtellerie' => 'ERP Hôtellerie',
-    'Plateforme de gestion hôtelière avec réservations, facturation et gestion de personnel.' => 'Plateforme de gestion hôtelière avec réservations, facturation et gestion de personnel.',
+    'Plateforme de gestion hôtelière avec réservations, facturation et gestion de personnel.' => 'Réservations, facturation, RH.',
     'ERP Agriculture' => 'ERP Agriculture',
-    'Solution de gestion agricole avec suivi des cultures, météo et market place.' => 'Solution de gestion agricole avec suivi des cultures, météo et market place.',
-    'Passerelle API centralisée avec authentification, rate limiting et monitoring.' => 'Passerelle API centralisée avec authentification, rate limiting et monitoring.',
+    'Solution de gestion agricole avec suivi des cultures, météo et market place.' => 'Cultures, météo, marketplace.',
+    'Passerelle API centralisée avec authentification, rate limiting et monitoring.' => 'API gateway: auth, rate limit, monitoring.',
     'Mobile Banking' => 'Mobile Banking',
-    'Application bancaire mobile avec transferts, paiements et gestion de comptes.' => 'Application bancaire mobile avec transferts, paiements et gestion de comptes.',
+    'Application bancaire mobile avec transferts, paiements et gestion de comptes.' => 'Transferts, paiements, comptes.',
     'Play Store' => 'Play Store',
     'Voir tous mes projets' => 'Voir tous mes projets',
 
     // Experience Section
     'Expérience & Réalisations' => 'Expérience & Réalisations',
-    'Mon parcours professionnel et les étapes clés de ma carrière' => 'Mon parcours professionnel et les étapes clés de ma carrière',
+    'Mon parcours professionnel et les étapes clés de ma carrière' => 'Parcours & résultats',
     'Présent' => 'Présent',
     'PDG & Fondateur' => 'PDG & Fondateur',
     'Création et développement d\'UZASHOP, entreprise spécialisée dans les solutions ERP multisectorielles. Direction technique et stratégique de l\'entreprise avec une équipe de 15+ développeurs.' => 'Création et développement d\'UZASHOP, entreprise spécialisée dans les solutions ERP multisectorielles. Direction technique et stratégique de l\'entreprise avec une équipe de 15+ développeurs.',
@@ -157,7 +158,7 @@ return [
     'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.' => 'Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.',
 
     // Footer
-    'Développeur informatique confirmé et PDG d\'UZASHOP, basé à Beni, RDC. Expert en Laravel, Flutter et Java, spécialisé dans la création d\'ERP multisectoriels adaptés au contexte africain.' => 'Développeur informatique confirmé et PDG d\'UZASHOP, basé à Beni, RDC. Expert en Laravel, Flutter et Java, spécialisé dans la création d\'ERP multisectoriels adaptés au contexte africain.',
+    'Développeur informatique confirmé et PDG d\'UZASHOP, basé à Beni, RDC. Expert en Laravel, Flutter et Java, spécialisé dans la création d\'ERP multisectoriels adaptés au contexte africain.' => 'Développeur full‑stack, PDG d’UZASHOP. Expert Laravel/Flutter/Java. ERP adaptés à l’Afrique.',
 
     // Blog
     'Blog' => 'Blog',

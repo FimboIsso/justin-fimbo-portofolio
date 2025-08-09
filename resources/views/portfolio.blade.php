@@ -107,7 +107,7 @@
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
                     <div class="text-center">
                         <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">5+</div>
-                        <div class="text-sm md:text-base text-gray-600">{{ __('Années d\'expérience') }}</div>
+                        <div class="text-sm md:text-base text-gray-600">{{ __('messages.Années d\'expérience') }}</div>
                     </div>
                     <div class="text-center">
                         <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50+</div>
@@ -155,11 +155,11 @@
                         </h3>
 
                         <p class="text-gray-600 leading-relaxed">
-                            {{ __('Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.') }}
+                            {{ __('messages.Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.') }}
                         </p>
 
                         <p class="text-gray-600 leading-relaxed">
-                            {{ __('Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.') }}
+                            {{ __('messages.Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.') }}
                         </p>
 
                         <!-- Key Points -->
@@ -167,11 +167,11 @@
                             <div class="flex items-center">
                                 <i class="fas fa-check-circle text-blue-600 mr-3"></i>
                                 <span
-                                    class="text-gray-700">{{ __('Expert Laravel & Flutter avec 5+ années d\'expérience') }}</span>
+                                    class="text-gray-700">{{ __('messages.Expert Laravel & Flutter avec 5+ années d\'expérience') }}</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-check-circle text-blue-600 mr-3"></i>
-                                <span class="text-gray-700">{{ __('PDG et fondateur d\'UZASHOP') }}</span>
+                                <span class="text-gray-700">{{ __('messages.PDG et fondateur d\'UZASHOP') }}</span>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-check-circle text-blue-600 mr-3"></i>
@@ -181,6 +181,16 @@
                                 <i class="fas fa-check-circle text-blue-600 mr-3"></i>
                                 <span
                                     class="text-gray-700">{{ __('messages.Solutions adaptées au contexte africain') }}</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <span
+                                    class="text-gray-700">{{ __('messages.Specialiste en Système d\'Information Foncière') }}</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <span
+                                    class="text-gray-700">{{ __('messages.Specialiste en Système d\'Information Géographique') }}</span>
                             </div>
                         </div>
 
@@ -195,11 +205,11 @@
                                 </div>
                                 <div>
                                     <span class="font-medium text-gray-700">{{ __('messages.Localisation:') }}</span>
-                                    <span class="text-gray-600 ml-2">Beni, RDC</span>
+                                    <span class="text-gray-600 ml-2">{{ __('messages.location_beni') }}</span>
                                 </div>
                                 <div>
                                     <span class="font-medium text-gray-700">{{ __('messages.Email:') }}</span>
-                                    <span class="text-gray-600 ml-2">justin.fimbo@uzashop.com</span>
+                                    <span class="text-gray-600 ml-2">fimbo.isso@uzashop.co</span>
                                 </div>
                                 <div>
                                     <span class="font-medium text-gray-700">{{ __('messages.Entreprise:') }}</span>
@@ -777,7 +787,7 @@
                         {{ __('messages.Contactez-moi') }}
                     </h2>
                     <p class="text-lg text-blue-100 max-w-2xl mx-auto">
-                        {{ __('Prêt à discuter de votre prochain projet ? N\'hésitez pas à me contacter !') }}
+                        {{ __('messages.Prêt à discuter de votre prochain projet ? N\'hésitez pas à me contacter !') }}
                     </p>
                 </div>
 
@@ -794,7 +804,7 @@
                                 </div>
                                 <div>
                                     <div class="font-medium">{{ __('messages.Email') }}</div>
-                                    <div class="text-blue-200">justin.fimbo@uzashop.com</div>
+                                    <div class="text-blue-200">fimbo.isso@uzashop.co</div>
                                 </div>
                             </div>
 
@@ -805,7 +815,7 @@
                                 </div>
                                 <div>
                                     <div class="font-medium">{{ __('messages.Téléphone') }}</div>
-                                    <div class="text-blue-200">+243 123 456 789</div>
+                                    <div class="text-blue-200">+243 997 643 592</div>
                                 </div>
                             </div>
 
@@ -848,7 +858,7 @@
                                     class="w-12 h-12 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-200">
                                     <i class="fab fa-twitter text-xl"></i>
                                 </a>
-                                <a href="https://wa.me/243123456789" target="_blank"
+                                <a href="https://wa.me/243997643592" target="_blank"
                                     class="w-12 h-12 bg-green-600 hover:bg-green-500 rounded-lg flex items-center justify-center transition-colors duration-200">
                                     <i class="fab fa-whatsapp text-xl"></i>
                                 </a>

@@ -96,40 +96,48 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <h1>📧 Nouveau Message de Contact</h1>
-            <p>Portfolio Justin Fimbo</p>
+            <h1>📧 {{ app()->getLocale() === 'fr' ? 'Nouveau Message de Contact' : 'New Contact Message' }}</h1>
+            <p>Justin Fimbo Portfolio</p>
         </div>
 
         <!-- Content -->
         <div class="content">
             <div class="field">
-                <span class="field-label">👤 Nom du contact :</span>
+                <span class="field-label">👤 {{ app()->getLocale() === 'fr' ? 'Nom du contact' : 'Contact Name' }}
+                    :</span>
                 <div class="field-value">{{ $messageData['name'] }}</div>
             </div>
 
             <div class="field">
-                <span class="field-label">📧 Adresse email :</span>
+                <span class="field-label">📧 {{ app()->getLocale() === 'fr' ? 'Adresse email' : 'Email address' }}
+                    :</span>
                 <div class="field-value">
                     <a href="mailto:{{ $messageData['email'] }}">{{ $messageData['email'] }}</a>
                 </div>
             </div>
 
             <div class="field">
-                <span class="field-label">📋 Sujet :</span>
+                <span class="field-label">📋 {{ app()->getLocale() === 'fr' ? 'Sujet' : 'Subject' }} :</span>
                 <div class="field-value">{{ $messageData['subject'] }}</div>
             </div>
 
             <div class="field">
-                <span class="field-label">💬 Message :</span>
+                <span class="field-label">💬 {{ app()->getLocale() === 'fr' ? 'Message' : 'Message' }} :</span>
                 <div class="message-content">
                     {!! nl2br(e($messageData['message'])) !!}
                 </div>
             </div>
 
             <div class="field">
-                <span class="field-label">🕒 Reçu le :</span>
-                <div class="field-value">{{ $messageData['sent_at']->format('d/m/Y à H:i') }}</div>
-                <span class="badge">Nouveau</span>
+                <span class="field-label">🕒 {{ app()->getLocale() === 'fr' ? 'Reçu le' : 'Received at' }} :</span>
+                <div class="field-value">
+                    @if (app()->getLocale() === 'fr')
+                        {{ $messageData['sent_at']->timezone(config('app.timezone', 'UTC'))->format('d/m/Y à H:i') }}
+                    @else
+                        {{ $messageData['sent_at']->timezone(config('app.timezone', 'UTC'))->format('M d, Y g:i A') }}
+                    @endif
+                </div>
+                <span class="badge">{{ app()->getLocale() === 'fr' ? 'Nouveau' : 'New' }}</span>
             </div>
         </div>
 
@@ -141,8 +149,11 @@
                 Beni, Nord-Kivu, RDC
             </p>
             <p>
-                <a href="mailto:{{ $messageData['email'] }}">Répondre directement</a> |
-                <a href="https://justinfimbo.com">Voir le portfolio</a>
+                <a
+                    href="mailto:{{ $messageData['email'] }}">{{ app()->getLocale() === 'fr' ? 'Répondre directement' : 'Reply directly' }}</a>
+                |
+                <a
+                    href="{{ config('app.url') }}">{{ app()->getLocale() === 'fr' ? 'Voir le portfolio' : 'View portfolio' }}</a>
             </p>
         </div>
     </div>

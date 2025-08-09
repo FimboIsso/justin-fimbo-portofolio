@@ -39,8 +39,9 @@ class ContactController extends Controller
                 'sent_at' => now(),
             ];
 
-            // Send email notification (you can configure this later)
-            // Mail::to('justin.fimbo@uzashop.com')->send(new ContactMessage($messageData));
+            // Send email notification
+            $recipient = env('CONTACT_TO_EMAIL', 'fimbo.isso@uzashop.co');
+            Mail::to($recipient)->send(new ContactMessage($messageData));
 
             return back()
                 ->with('success', __('Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.'));
