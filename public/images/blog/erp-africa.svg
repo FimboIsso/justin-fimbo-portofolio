@@ -1,0 +1,28 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blogGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#blogGradient1)"/>
+
+  <!-- African continent silhouette -->
+  <path d="M150 80 C170 70, 190 75, 210 85 C230 90, 250 100, 260 120 C265 140, 270 160, 260 180 C250 200, 240 220, 220 230 C200 240, 180 235, 160 225 C140 215, 130 200, 125 180 C120 160, 125 140, 135 120 C140 100, 145 90, 150 80 Z" fill="white" opacity="0.3"/>
+
+  <!-- ERP Icons -->
+  <circle cx="180" cy="120" r="8" fill="white" opacity="0.8"/>
+  <circle cx="200" cy="140" r="6" fill="white" opacity="0.8"/>
+  <circle cx="220" cy="160" r="7" fill="white" opacity="0.8"/>
+
+  <!-- Connecting lines -->
+  <line x1="180" y1="120" x2="200" y2="140" stroke="white" stroke-width="2" opacity="0.6"/>
+  <line x1="200" y1="140" x2="220" y2="160" stroke="white" stroke-width="2" opacity="0.6"/>
+
+  <!-- Title -->
+  <text x="200" y="250" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="18" font-weight="bold">
+    ERP Afrique
+  </text>
+</svg>
