@@ -268,141 +268,205 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-16 bg-gray-50">
+    <section id="skills" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div>
                 <!-- Section Header -->
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
                         {{ __('messages.Mes Compétences') }}
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p class="text-base text-gray-700 max-w-2xl mx-auto">
                         {{ __('messages.Technologies et outils que je maîtrise pour créer des solutions innovantes') }}
                     </p>
                 </div>
 
-                <!-- Enhanced Skills Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
+
+                <!-- Modern Skills Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-12">
+
                     <!-- Laravel -->
-                    <div class="card-3d glass-morphism text-center hover-tilt  reveal-scale" style="--i: 1">
-                        <div class="p-4">
-                            <div>
-                                <i class="fab fa-laravel text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-red-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-laravel text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Laravel</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Framework PHP') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-red-500 to-red-600 h-2 rounded-full" style="width: 95%">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Laravel</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Framework PHP') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full transition-all duration-700" style="width: 95%">
                                 </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Expert</span>
                         </div>
                     </div>
 
                     <!-- Flutter -->
-                    <div class="card-3d gradient-border-animated text-center hover-tilt  reveal-scale" style="--i: 2">
-                        <div class="content p-4">
-                            <div>
-                                <i class="fab fa-flutter text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-flutter text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Flutter</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Apps mobiles') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-black to-gray-800 h-2 rounded-full" style="width: 90%">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Flutter</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Apps mobiles') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full transition-all duration-700" style="width: 90%">
                                 </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
                         </div>
                     </div>
 
                     <!-- Java -->
-                    <div class="card-3d cyber-border text-center hover-tilt  reveal-scale" style="--i: 3">
-                        <div class="cyber-border-content p-4">
-                            <div>
-                                <i class="fab fa-java text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-orange-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-java text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Java</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Android natif') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-gray-700 to-gray-800 h-2 rounded-full"
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Java</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Android natif') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-orange-500 h-2 rounded-full transition-all duration-700"
                                     style="width: 85%"></div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
                         </div>
                     </div>
 
                     <!-- API REST -->
-                    <div class="card-3d neumorphism text-center hover-tilt  reveal-scale" style="--i: 4">
-                        <div class="p-4">
-                            <div>
-                                <i class="fas fa-code text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-code text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">API REST</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Services web') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full"
-                                    style="width: 92%"></div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">API REST</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Services web') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full transition-all duration-700" style="width: 92%">
+                                </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Expert</span>
                         </div>
                     </div>
 
                     <!-- MySQL -->
-                    <div class="card-3d glass-morphism text-center hover-tilt  reveal-scale" style="--i: 5">
-                        <div class="p-4">
-                            <div>
-                                <i class="fas fa-database text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-database text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">MySQL</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Base de données') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-black to-cyan-500 h-2 rounded-full" style="width: 88%">
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">MySQL</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Base de données') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full transition-all duration-700" style="width: 88%">
                                 </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
                         </div>
                     </div>
 
                     <!-- Git -->
-                    <div class="card-3d neumorphism text-center hover-tilt  reveal-scale" style="--i: 6">
-                        <div class="p-4">
-                            <div>
-                                <i class="fab fa-git-alt text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-gray-300">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-gray-700 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-git-alt text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Git</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Contrôle de version') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-gray-600 to-gray-700 h-2 rounded-full"
-                                    style="width: 93%"></div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Git</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Contrôle de version') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-gray-700 h-2 rounded-full transition-all duration-700" style="width: 93%">
+                                </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Expert</span>
                         </div>
                     </div>
 
                     <!-- Docker -->
-                    <div class="card-3d cyber-border-animated text-center hover-tilt  reveal-scale" style="--i: 7">
-                        <div class="content p-4">
-                            <div>
-                                <i class="fab fa-docker text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-docker text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">Docker</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Conteneurisation') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 h-2 rounded-full"
-                                    style="width: 80%"></div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Docker</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Conteneurisation') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-500 h-2 rounded-full transition-all duration-700" style="width: 80%">
+                                </div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Intermédiaire</span>
+                        </div>
+                    </div>
+
+                    <!-- Vue.js -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fab fa-vuejs text-white text-2xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">Vue.js</h3>
+                            <p class="text-xs text-gray-600 mb-3">Frontend SPA</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-green-500 h-2 rounded-full transition-all duration-700" style="width: 82%">
+                                </div>
+                            </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
                         </div>
                     </div>
 
                     <!-- UX/UI -->
-                    <div class="card-3d gradient-border text-center hover-tilt  reveal-scale" style="--i: 8">
-                        <div class="gradient-border-content p-4">
-                            <div>
-                                <i class="fas fa-palette text-white text-3xl"></i>
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-purple-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-palette text-white text-2xl"></i>
                             </div>
-                            <h3 class="font-bold text-gray-900 mb-3 text-lg">UX/UI</h3>
-                            <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Design utilisateur') }}</p>
-                            <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-black to-pink-500 h-2 rounded-full" style="width: 87%">
-                                </div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">UX/UI</h3>
+                            <p class="text-xs text-gray-600 mb-3">{{ __('messages.Design utilisateur') }}</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full transition-all duration-700"
+                                    style="width: 87%"></div>
                             </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
+                        </div>
+                    </div>
+
+                    <!-- PostgreSQL -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-200">
+                        <div class="flex flex-col items-center text-center">
+                            <div
+                                class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-elephant text-white text-2xl"></i>
+                            </div>
+                            <h3 class="font-bold text-gray-900 mb-2 text-lg">PostgreSQL</h3>
+                            <p class="text-xs text-gray-600 mb-3">Base de données</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-indigo-600 h-2 rounded-full transition-all duration-700"
+                                    style="width: 85%"></div>
+                            </div>
+                            <span class="text-xs text-gray-500 mt-1">Avancé</span>
                         </div>
                     </div>
                 </div>
+
+
 
                 <!-- Expertise Areas -->
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -521,9 +585,9 @@
                                     class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
                                     <i class="fas fa-eye mr-2"></i>{{ __('messages.Voir démo') }}
                                 </a>
-                                <a href="#"
+                                <a href="https://demo.uzashop.co" target="_blank"
                                     class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
-                                    <i class="fab fa-github mr-2"></i>Code
+                                    <i class="fab fa-github mr-2"></i>Demo
                                 </a>
                             </div>
                         </div>
@@ -637,7 +701,7 @@
                         </div>
                         <div class="p-6">
                             <div class="flex items-center justify-between mb-3">
-                                <h3 class="text-xl font-bold text-gray-900">ERP Multisectoriel</h3>
+                                <h3 class="text-xl font-bold text-gray-900">UZASHOP ERP </h3>
                                 <span class="px-2 py-1 bg-purple-600 text-white text-xs rounded-full">Suite</span>
                             </div>
                             <p class="text-gray-600 mb-4 text-sm leading-relaxed">
@@ -663,7 +727,7 @@
                                     class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
                                     <i class="fas fa-play mr-2"></i>{{ __('messages.Voir démo') }}
                                 </a>
-                                <a href="#"
+                                <a href="https://uzashop.co" target="_blank"
                                     class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
                                     <i class="fas fa-file-alt mr-2"></i>Docs
                                 </a>
@@ -706,7 +770,7 @@
 
                             <!-- Actions -->
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                                <a href="#"
+                                <a href="https://play.google.com/store/apps/developer?id=LEDINITIATIVES" target="_blank"
                                     class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
                                     <i class="fab fa-google-play mr-2"></i>Play Store
                                 </a>
@@ -753,11 +817,11 @@
 
                             <!-- Actions -->
                             <div class="flex items-center justify-between pt-4 border-t border-gray-100">
-                                <a href="#"
+                                <a href="https://sms.uzashop.co" target="_blank"
                                     class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
                                     <i class="fas fa-book mr-2"></i>Documentation
                                 </a>
-                                <a href="#"
+                                <a href="https://api.uzashop.co/api/documentation" target="_blank"
                                     class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
                                     <i class="fas fa-cogs mr-2"></i>API
                                 </a>
@@ -794,6 +858,32 @@
 
                 <!-- Experience Horizontal Layout -->
                 <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-rocket text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full font-medium mb-2">Fondateur</span>
+                                    <div class="text-xs text-gray-500">02/2019 – Présent</div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Co-fondateur & CEO</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">UZASHOP • Beni</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• POS scalable: 300+ points de vente</li>
+                            <li>• Documentation technique & versioning</li>
+                            <li>• Lead technique: encadrement équipe</li>
+                            <li>• Priorisation backlog & revues code</li>
+                        </ul>
+                    </div>
+
+
                     <!-- Gestionnaire des Projets – Congo Initiative-UCBC -->
                     <div
                         class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-black">
@@ -804,8 +894,8 @@
                                 </div>
                                 <div>
                                     <span
-                                        class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium mb-2">Actuel</span>
-                                    <div class="text-xs text-gray-500">06/2023 – Présent</div>
+                                        class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium mb-2">2023-2025</span>
+                                    <div class="text-xs text-gray-500">06/2023 – 01/2025</div>
                                 </div>
                             </div>
                         </div>
@@ -815,6 +905,7 @@
                             <li>• Pilotage technico‑fonctionnel des projets</li>
                             <li>• 10+ propositions rédigées (4 financées)</li>
                             <li>• 10+ études de base supervisées</li>
+                            <li>• Developpement des applications mobile</li>
                         </ul>
                     </div>
 
@@ -836,7 +927,7 @@
                         <h3 class="text-lg font-bold text-gray-900 mb-1">Expert SIF</h3>
                         <h4 class="text-sm text-gray-600 mb-3">Congo Initiative‑UCBC • Nyunzu‑Kalemie</h4>
                         <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Architecture système d'archivage numérique</li>
+                            <li>• Conception du système d'archivage numérique d'information foncière</li>
                             <li>• Déploiement SIF opérationnel</li>
                             <li>• Registre conflits: <a href="https://zeroconflit.org" target="_blank"
                                     class="text-black underline">zeroconflit.org</a></li>
@@ -862,7 +953,7 @@
                         <h3 class="text-lg font-bold text-gray-900 mb-1">Consultant Développeur</h3>
                         <h4 class="text-sm text-gray-600 mb-3">ESCOKIVU SARL • Beni</h4>
                         <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Système gestion achats agricoles end‑to‑end</li>
+                            <li>• Système gestion achats et traçabilité des produits agricoles end‑to‑end</li>
                             <li>• Intégrations: logistique, finance, traçabilité</li>
                             <li>• Formation 200+ agents sur Storeman</li>
                             <li>• Extension EscoUganda</li>
@@ -887,36 +978,13 @@
                         <h3 class="text-lg font-bold text-gray-900 mb-1">Gestionnaire BD & Dév GIS</h3>
                         <h4 class="text-sm text-gray-600 mb-3">IRI‑UCBC • Beni</h4>
                         <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• Déploiement SIF + archivage (OICHA/BENI)</li>
+                            <li>• Déploiement SIF (Système d'Information Foncière) + archivage (OICHA/BENI)</li>
                             <li>• Cartographie: 1 500+ parcelles recensées</li>
                             <li>• Formation agents collecte & géoréférencement</li>
                         </ul>
                     </div>
 
                     <!-- Co‑fondateur, Ingénieur Logiciel & Gestionnaire de Projet – UZASHOP -->
-                    <div
-                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
-                        <div class="flex items-start justify-between mb-4">
-                            <div class="flex items-center">
-                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
-                                    <i class="fas fa-rocket text-white text-lg"></i>
-                                </div>
-                                <div>
-                                    <span
-                                        class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full font-medium mb-2">Fondateur</span>
-                                    <div class="text-xs text-gray-500">02/2019 – Présent</div>
-                                </div>
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Co-fondateur & CTO</h3>
-                        <h4 class="text-sm text-gray-600 mb-3">UZASHOP • Beni</h4>
-                        <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• POS scalable: 200+ entreprises</li>
-                            <li>• Documentation technique & versioning</li>
-                            <li>• Lead technique: encadrement équipe</li>
-                            <li>• Priorisation backlog & revues code</li>
-                        </ul>
-                    </div>
 
                     <!-- Ingénieur Logiciel – AFRISOFT -->
                     <div
@@ -929,14 +997,14 @@
                                 <div>
                                     <span
                                         class="inline-block px-3 py-1 bg-pink-100 text-pink-700 text-xs rounded-full font-medium mb-2">2018-2020</span>
-                                    <div class="text-xs text-gray-500">02/2018 – 04/2020</div>
+                                    <div class="text-xs text-gray-500">02/2018 – 04/2023</div>
                                 </div>
                             </div>
                         </div>
                         <h3 class="text-lg font-bold text-gray-900 mb-1">Ingénieur Logiciel</h3>
                         <h4 class="text-sm text-gray-600 mb-3">AFRISOFT • Beni</h4>
                         <ul class="text-sm text-gray-600 space-y-1">
-                            <li>• 10+ applications Android</li>
+                            <li>• contribution à 15+ applications Android</li>
                             <li>• Gestion entreprises & ONG</li>
                             <li>• Cycles complets: conception → tests</li>
                             <li>• Technologies: Java, XML, SQLite</li>
