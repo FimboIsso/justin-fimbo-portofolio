@@ -91,7 +91,7 @@
                     </li>
                     <li class="flex items-center text-gray-400">
                         <i class="fas fa-globe mr-2"></i>
-                        www.uzashop.com
+                        www.uzashop.co
                     </li>
                 </ul>
             </div>
