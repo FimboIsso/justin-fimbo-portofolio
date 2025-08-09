@@ -255,9 +255,9 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-    border-radius: 2px;
+    height: 2px;
+    background: linear-gradient(90deg, #000000, #333333);
+    border-radius: 1px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     transform: scaleX(0);
     transform-origin: left;
@@ -269,7 +269,7 @@ body {
 
 .nav-link.active .nav-indicator {
     transform: scaleX(1);
-    background: linear-gradient(90deg, #f093fb, #f5576c);
+    background: linear-gradient(90deg, #000000, #666666);
 }
 
 /* Blob Animation */
@@ -685,12 +685,11 @@ body {
 
 /* Enhanced Gradient Borders */
 .gradient-border {
-    background: linear-gradient(45deg, #667eea, #764ba2, #f093fb, #f5576c);
-    background-size: 300% 300%;
-    border-radius: 20px;
-    padding: 3px;
-    animation: gradient-shift 4s ease infinite;
-    position: relative;
+    background: linear-gradient(45deg, #000000, #333333, #666666, #1a1a1a);
+    background-size: 200% 200%;
+    border-radius: 15px;
+    padding: 2px;
+    animation: gradient-shift 6s ease infinite;
 }
 
 .gradient-border::before {
@@ -706,18 +705,17 @@ body {
 
 .gradient-border-content {
     background: white;
-    border-radius: 17px;
-    padding: 24px;
+    border-radius: 13px;
+    padding: 20px;
     position: relative;
     z-index: 1;
 }
 
 .gradient-border-animated {
-    background: conic-gradient(from 0deg, #667eea, #764ba2, #f093fb, #f5576c, #667eea);
-    border-radius: 20px;
-    padding: 3px;
-    animation: rotate 3s linear infinite;
-    position: relative;
+    background: linear-gradient(45deg, #000000, #333333, #666666, #000000);
+    border-radius: 15px;
+    padding: 2px;
+    animation: gradient-shift 8s ease infinite;
 }
 
 @keyframes rotate {
@@ -732,8 +730,8 @@ body {
 
 .gradient-border-animated .content {
     background: white;
-    border-radius: 17px;
-    padding: 24px;
+    border-radius: 13px;
+    padding: 20px;
     position: relative;
     z-index: 1;
 }

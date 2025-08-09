@@ -7,7 +7,7 @@
 @section('content')
     <!-- Article Hero -->
     <section class="relative pt-24 pb-12 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-pink-600"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-gray-800"></div>
         <div class="absolute inset-0 bg-black/20"></div>
 
         <!-- Floating shapes -->
@@ -16,7 +16,7 @@
             style="animation-delay: -4s;"></div>
 
         <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+            <div >
                 <!-- Breadcrumb -->
                 <nav class="mb-8">
                     <ol class="flex items-center space-x-2 text-sm text-white/80">
@@ -73,7 +73,7 @@
     <!-- Article Content -->
     <section class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row gap-12">
+            <div class="flex flex-col lg:flex-row gap-4">
                 <!-- Main Content -->
                 <article class="lg:flex-1">
                     @if (!empty($article['image']))
@@ -96,12 +96,12 @@
                                 @php($url = urlencode(url()->current()))
                                 @php($title = urlencode(app()->getLocale() == 'en' ? ($article['title_en'] ?: $article['title']) : $article['title']))
                                 <a href="https://www.facebook.com/sharer/sharer.php?u={{ $url }}" target="_blank"
-                                    class="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors duration-200">
+                                    class="flex items-center justify-center w-10 h-10 bg-black text-white rounded-full hover:bg-gray-800 transition-colors duration-200">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="https://twitter.com/intent/tweet?url={{ $url }}&text={{ $title }}"
                                     target="_blank"
-                                    class="flex items-center justify-center w-10 h-10 bg-blue-400 text-white rounded-full hover:bg-blue-500 transition-colors duration-200">
+                                    class="flex items-center justify-center w-10 h-10 bg-blue-400 text-white rounded-full hover:bg-black transition-colors duration-200">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                                 <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ $url }}&title={{ $title }}"
@@ -118,10 +118,10 @@
                         </div>
 
                         <!-- Author Bio -->
-                        <div class="glass-card p-6">
+                        <div class="glass-card p-4">
                             <div class="flex items-start space-x-4">
                                 <div
-                                    class="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                    class="w-16 h-16 bg-gradient-to-r from-black to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
                                     <span class="text-white font-bold text-lg">JF</span>
                                 </div>
                                 <div class="flex-1">
@@ -131,7 +131,7 @@
                                     </p>
                                     <div class="flex space-x-3">
                                         <a href="https://linkedin.com/in/justin-fimbo" target="_blank"
-                                            class="text-gray-400 hover:text-blue-600 transition-colors duration-200">
+                                            class="text-gray-400 hover:text-black transition-colors duration-200">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
                                         <a href="https://github.com/justin-fimbo" target="_blank"
@@ -150,9 +150,9 @@
                 </article>
 
                 <!-- Sidebar -->
-                <aside class="lg:w-80 space-y-8">
+                <aside class="lg:w-80 space-y-6">
                     <!-- Related Articles -->
-                    <div class="glass-card p-6">
+                    <div class="glass-card p-4">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('messages.Articles similaires') }}</h3>
                         <div class="space-y-4">
                             @forelse($related ?? [] as $r)
@@ -162,7 +162,7 @@
                                             <img src="/{{ $r['image'] }}" alt="{{ $r['title'] }}"
                                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
                                         @else
-                                            <div class="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500"></div>
+                                            <div class="w-full h-full bg-gradient-to-br from-black to-purple-500"></div>
                                         @endif
                                     </div>
                                     <div class="flex-1 min-w-0">
@@ -196,19 +196,19 @@
                     </div>
 
                     <!-- Table of Contents -->
-                    <div class="neumorphism p-6">
+                    <div class="neumorphism p-4">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('messages.Table des matières') }}</h3>
                         <nav class="space-y-2">
                             <a href="#section1"
-                                class="block text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                class="block text-sm text-gray-600 hover:text-black transition-colors duration-200">
                                 1. {{ __('messages.Connectivité Internet Limitée') }}
                             </a>
                             <a href="#section2"
-                                class="block text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                class="block text-sm text-gray-600 hover:text-black transition-colors duration-200">
                                 2. {{ __('messages.Adaptation aux Pratiques Locales') }}
                             </a>
                             <a href="#section3"
-                                class="block text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200">
+                                class="block text-sm text-gray-600 hover:text-black transition-colors duration-200">
                                 3. {{ __('messages.Formation et Adoption') }}
                             </a>
                         </nav>
@@ -223,7 +223,7 @@
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <a href="{{ route('blog.index') }}"
-                    class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200">
+                    class="inline-flex items-center text-black hover:text-gray-800 font-medium transition-colors duration-200">
                     <i class="fas fa-arrow-left mr-2"></i>
                     {{ __('messages.Retour au blog') }}
                 </a>
@@ -231,14 +231,14 @@
                 <div class="flex items-center gap-4">
                     @if (!empty($prev))
                         <a href="{{ route('blog.show', $prev['slug']) }}"
-                            class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200">
+                            class="inline-flex items-center text-black hover:text-gray-800 font-medium transition-colors duration-200">
                             <i class="fas fa-arrow-left mr-2"></i>
                             {{ __('messages.Article précédent') }}
                         </a>
                     @endif
                     @if (!empty($next))
                         <a href="{{ route('blog.show', $next['slug']) }}"
-                            class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200">
+                            class="inline-flex items-center text-black hover:text-gray-800 font-medium transition-colors duration-200">
                             {{ __('messages.Article suivant') }}
                             <i class="fas fa-arrow-right ml-2"></i>
                         </a>

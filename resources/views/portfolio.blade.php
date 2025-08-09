@@ -15,17 +15,15 @@
         <!-- Simplified Floating Elements -->
         <div class="absolute inset-0 overflow-hidden">
             <!-- Subtle Geometric Shapes -->
-            <div class="absolute top-1/4 left-1/4 w-16 h-16 border border-white/20 rotate-45 float-animation"></div>
-            <div class="absolute top-3/4 right-1/4 w-12 h-12 border border-white/20 rotate-12 float-animation"
-                style="animation-delay: -4s;"></div>
-            <div class="absolute bottom-1/3 right-10 w-20 h-20 bg-white/5 rounded-full float-animation"
-                style="animation-delay: -2s;"></div>
+            <div></div>
+            <div style="animation-delay: -4s;"></div>
+            <div style="animation-delay: -2s;"></div>
         </div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="fade-in-up">
+            <div>
                 <!-- Enhanced Profile Picture -->
-                <div class="mb-12 flex justify-center">
+                <div class="mb-8 flex justify-center">
                     <div class="relative">
                         <!-- Simplified Glowing Ring -->
                         <div
@@ -40,8 +38,7 @@
                         </div>
 
                         <!-- Enhanced Status Badge -->
-                        <div
-                            class="absolute -bottom-3 -right-3 w-18 h-18 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full border-4 border-white flex items-center justify-center shadow-xl pulse-glow hover-glow magnetic">
+                        <div>
                             <i class="fas fa-check text-white text-xl"></i>
                             <div
                                 class="absolute inset-0 rounded-full bg-gradient-to-r from-green-400 to-emerald-500 blur-md opacity-50">
@@ -49,25 +46,17 @@
                         </div>
 
                         <!-- Enhanced Floating Tech Icons -->
-                        <div class="absolute -top-6 -left-6 w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
-                            style="animation-delay: -1s;">
+                        <div
+                            class="absolute -top-4 -left-4 w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full flex items-center justify-center text-white text-sm">
                             <i class="fab fa-laravel"></i>
                         </div>
-                        <div class="absolute -top-6 -right-6 w-12 h-12 bg-gradient-to-r from-cyan-500 to-cyan-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
-                            style="animation-delay: -2s;">
+                        <div
+                            class="absolute -top-4 -right-4 w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full flex items-center justify-center text-white text-sm">
                             <i class="fab fa-flutter"></i>
                         </div>
-                        <div class="absolute -bottom-6 -left-6 w-12 h-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full flex items-center justify-center text-white text-lg float-animation hover-glow magnetic electric-border"
-                            style="animation-delay: -3s;">
+                        <div
+                            class="absolute -bottom-4 -left-4 w-10 h-10 bg-gradient-to-r from-black to-gray-800 rounded-full flex items-center justify-center text-white text-sm">
                             <i class="fab fa-java"></i>
-                        </div>
-                        <div class="absolute top-1/2 -left-8 w-10 h-10 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm float-animation hover-glow magnetic"
-                            style="animation-delay: -4s; transform: translateY(-50%);">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="absolute top-1/2 -right-8 w-10 h-10 bg-gradient-to-r from-pink-500 to-pink-600 rounded-full flex items-center justify-center text-white text-sm float-animation hover-glow magnetic"
-                            style="animation-delay: -5s; transform: translateY(-50%);">
-                            <i class="fas fa-rocket"></i>
                         </div>
                     </div>
                 </div>
@@ -79,128 +68,125 @@
                 </h1>
 
                 <!-- Simplified Subtitle -->
-                <p class="text-xl md:text-3xl lg:text-4xl text-white/90 mb-10 max-w-4xl mx-auto font-medium">
+                <p class="text-xl md:text-2xl lg:text-3xl text-white/90 mb-8 max-w-3xl mx-auto font-medium">
                     {{ __('messages.Développeur & Entrepreneur innovant') }}
                 </p>
 
-                <!-- Enhanced Description with Typewriter Effect -->
-                <div class="text-lg md:text-xl text-white/90 mb-14 max-w-5xl mx-auto fade-in-up"
-                    style="animation-delay: 0.7s;">
-                    <div class="glass-morphism p-6 rounded-2xl backdrop-blur-xl">
-                        <p class="text-matrix">
+                <!-- Simplified Description -->
+                <div class="text-base md:text-lg text-white/80 mb-8 max-w-4xl mx-auto">
+                    <div class="glass-morphism p-4 rounded-xl backdrop-blur-xl">
+                        <p class="leading-relaxed">
                             {{ __('Expert en Laravel, Flutter & Java | PDG d\'UZASHOP | Créateur d\'ERP multisectoriels adaptés au contexte africain | Basé à Beni, RDC') }}
                         </p>
                     </div>
                 </div>
 
-                <!-- Enhanced CTA Buttons -->
-                <div class="flex flex-col sm:flex-row justify-center items-center space-y-6 sm:space-y-0 sm:space-x-8 scale-in"
-                    style="animation-delay: 0.9s;">
+                <!-- Simplified CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-4">
                     <a href="{{ asset('files/Justin_Fimbo_CV.pdf') }}" download
-                        class="btn-modern inline-flex items-center text-lg px-8 py-4 hover-lift magnetic">
-                        <i class="fas fa-download mr-3 text-xl"></i>
+                        class="btn-modern inline-flex items-center px-6 py-3">
+                        <i class="fas fa-download mr-2"></i>
                         {{ __('messages.Télécharger CV') }}
                     </a>
-                    <a href="#contact"
-                        class="btn-glass px-8 py-4 text-white inline-flex items-center text-lg hover-glow magnetic">
-                        <i class="fas fa-envelope mr-3 text-xl"></i>
+                    <a href="#contact" class="btn-glass px-6 py-3 text-white inline-flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
                         {{ __('messages.Me contacter') }}
                     </a>
                 </div>
 
                 <!-- Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12 max-w-3xl mx-auto">
                     <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">5+</div>
-                        <div class="text-sm md:text-base text-gray-600">{{ __('messages.Années d\'expérience') }}</div>
+                        <div class="text-2xl md:text-3xl font-bold text-white mb-1">5+</div>
+                        <div class="text-sm text-white/70">{{ __('messages.Années d\'expérience') }}</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">50+</div>
-                        <div class="text-sm md:text-base text-gray-600">{{ __('messages.Projets réalisés') }}</div>
+                        <div class="text-2xl md:text-3xl font-bold text-white mb-1">50+</div>
+                        <div class="text-sm text-white/70">{{ __('messages.Projets réalisés') }}</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">20+</div>
-                        <div class="text-sm md:text-base text-gray-600">{{ __('messages.Clients satisfaits') }}</div>
+                        <div class="text-2xl md:text-3xl font-bold text-white mb-1">20+</div>
+                        <div class="text-sm text-white/70">{{ __('messages.Clients satisfaits') }}</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-2">1</div>
-                        <div class="text-sm md:text-base text-gray-600">{{ __('messages.Entreprise créée') }}</div>
+                        <div class="text-2xl md:text-3xl font-bold text-white mb-1">1</div>
+                        <div class="text-sm text-white/70">{{ __('messages.Entreprise créée') }}</div>
                     </div>
                 </div>
             </div>
 
             <!-- Scroll indicator -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-                <a href="#about" class="text-gray-400 hover:text-blue-600 transition-colors duration-200">
-                    <i class="fas fa-chevron-down text-2xl"></i>
+                <a href="#about" class="text-white/60 hover:text-white transition-colors duration-200">
+                    <i class="fas fa-chevron-down text-xl"></i>
                 </a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div>
                 <!-- Section Header -->
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-black mb-4">
                         {{ __('messages.À propos de moi') }}
                     </h2>
-                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p class="text-base text-gray-700 max-w-2xl mx-auto">
                         {{ __('messages.Découvrez mon parcours et ma passion pour le développement informatique') }}
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                     <!-- Text Content -->
-                    <div class="space-y-6">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">
+                    <div class="space-y-5">
+                        <h3 class="text-xl font-semibold text-black mb-3">
                             {{ __('messages.Développeur informatique confirmé & Entrepreneur') }}
                         </h3>
 
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed text-sm">
                             {{ __('messages.Passionné par la technologie depuis mon plus jeune âge, j\'ai développé mes compétences en développement web et mobile pour devenir un expert reconnu en Laravel, Flutter et Java. Basé à Beni en République Démocratique du Congo, j\'ai fondé UZASHOP avec la vision de créer des solutions technologiques adaptées au contexte africain.') }}
                         </p>
 
-                        <p class="text-gray-600 leading-relaxed">
+                        <p class="text-gray-700 leading-relaxed text-sm">
                             {{ __('messages.Mon expertise se concentre sur la création d\'ERP multisectoriels qui répondent aux besoins spécifiques des entreprises africaines. De la santé à l\'hôtellerie, en passant par l\'agriculture, mes solutions intègrent la synchronisation hors ligne et des interfaces utilisateur intuitives pour maximiser l\'efficacité opérationnelle.') }}
                         </p>
 
                         <!-- Key Points -->
-                        <div class="space-y-3">
+                        <div class="space-y-2">
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <i class="fas fa-check-circle text-black mr-3 text-sm"></i>
                                 <span
-                                    class="text-gray-700">{{ __('messages.Expert Laravel & Flutter avec 5+ années d\'expérience') }}</span>
+                                    class="text-gray-800 text-sm">{{ __('messages.Expert Laravel & Flutter avec 5+ années d\'expérience') }}</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
-                                <span class="text-gray-700">{{ __('messages.PDG et fondateur d\'UZASHOP') }}</span>
+                                <i class="fas fa-check-circle text-black mr-3 text-sm"></i>
+                                <span class="text-gray-800 text-sm">{{ __('messages.PDG et fondateur d\'UZASHOP') }}</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <i class="fas fa-check-circle text-black mr-3"></i>
                                 <span class="text-gray-700">{{ __('messages.Spécialiste des ERP multisectoriels') }}</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <i class="fas fa-check-circle text-black mr-3"></i>
                                 <span
                                     class="text-gray-700">{{ __('messages.Solutions adaptées au contexte africain') }}</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <i class="fas fa-check-circle text-black mr-3"></i>
                                 <span
                                     class="text-gray-700">{{ __('messages.Specialiste en Système d\'Information Foncière') }}</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-blue-600 mr-3"></i>
+                                <i class="fas fa-check-circle text-black mr-3"></i>
                                 <span
                                     class="text-gray-700">{{ __('messages.Specialiste en Système d\'Information Géographique') }}</span>
                             </div>
                         </div>
 
                         <!-- Personal Info -->
-                        <div class="bg-gray-50 p-6 rounded-lg mt-8">
+                        <div class="bg-gray-50 p-4 rounded-lg mt-8">
                             <h4 class="font-semibold text-gray-900 mb-4">{{ __('messages.Informations personnelles') }}
                             </h4>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
@@ -226,12 +212,11 @@
 
                     <!-- Enhanced Visual Content -->
                     <div class="relative">
-                        <div class="grid grid-cols-2 gap-6">
-                            <div class="space-y-6">
-                                <div class="card-3d cyber-border-animated hover-tilt magnetic">
-                                    <div class="content p-6">
-                                        <div
-                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full mb-4 hover-glow">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="space-y-4">
+                                <div>
+                                    <div class="content p-4">
+                                        <div>
                                             <i class="fas fa-code text-white text-2xl"></i>
                                         </div>
                                         <h4 class="font-bold text-gray-900 mb-3 text-lg">
@@ -240,10 +225,9 @@
                                             {{ __('messages.Applications web & mobiles modernes') }}</p>
                                     </div>
                                 </div>
-                                <div class="card-3d gradient-border-animated hover-tilt magnetic">
-                                    <div class="content p-6">
-                                        <div
-                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full mb-4 hover-glow">
+                                <div>
+                                    <div class="content p-4">
+                                        <div>
                                             <i class="fas fa-chart-line text-white text-2xl"></i>
                                         </div>
                                         <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Business') }}
@@ -253,11 +237,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="space-y-6 mt-8">
-                                <div class="card-3d glass-morphism hover-tilt magnetic">
-                                    <div class="p-6">
-                                        <div
-                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full mb-4 hover-glow">
+                            <div class="space-y-4 mt-8">
+                                <div>
+                                    <div class="p-4">
+                                        <div>
                                             <i class="fas fa-mobile-alt text-white text-2xl"></i>
                                         </div>
                                         <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Mobile') }}</h4>
@@ -265,10 +248,9 @@
                                             {{ __('messages.Apps Flutter natives') }}</p>
                                     </div>
                                 </div>
-                                <div class="card-3d neumorphism hover-tilt magnetic">
-                                    <div class="p-6">
-                                        <div
-                                            class="flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full mb-4 hover-glow">
+                                <div>
+                                    <div class="p-4">
+                                        <div>
                                             <i class="fas fa-rocket text-white text-2xl"></i>
                                         </div>
                                         <h4 class="font-bold text-gray-900 mb-3 text-lg">{{ __('messages.Innovation') }}
@@ -286,11 +268,11 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="py-20 bg-gray-50">
+    <section id="skills" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+            <div>
                 <!-- Section Header -->
-                <div class="text-center mb-16">
+                <div class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         {{ __('messages.Mes Compétences') }}
                     </h2>
@@ -300,12 +282,11 @@
                 </div>
 
                 <!-- Enhanced Skills Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-16">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-8">
                     <!-- Laravel -->
-                    <div class="card-3d glass-morphism text-center hover-tilt magnetic reveal-scale" style="--i: 1">
-                        <div class="p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-red-500 to-red-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d glass-morphism text-center hover-tilt  reveal-scale" style="--i: 1">
+                        <div class="p-4">
+                            <div>
                                 <i class="fab fa-laravel text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">Laravel</h3>
@@ -318,43 +299,39 @@
                     </div>
 
                     <!-- Flutter -->
-                    <div class="card-3d gradient-border-animated text-center hover-tilt magnetic reveal-scale"
-                        style="--i: 2">
-                        <div class="content p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d gradient-border-animated text-center hover-tilt  reveal-scale" style="--i: 2">
+                        <div class="content p-4">
+                            <div>
                                 <i class="fab fa-flutter text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">Flutter</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Apps mobiles') }}</p>
                             <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full"
-                                    style="width: 90%"></div>
+                                <div class="bg-gradient-to-r from-black to-gray-800 h-2 rounded-full" style="width: 90%">
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Java -->
-                    <div class="card-3d cyber-border text-center hover-tilt magnetic reveal-scale" style="--i: 3">
-                        <div class="cyber-border-content p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d cyber-border text-center hover-tilt  reveal-scale" style="--i: 3">
+                        <div class="cyber-border-content p-4">
+                            <div>
                                 <i class="fab fa-java text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">Java</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Android natif') }}</p>
                             <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full"
+                                <div class="bg-gradient-to-r from-gray-700 to-gray-800 h-2 rounded-full"
                                     style="width: 85%"></div>
                             </div>
                         </div>
                     </div>
 
                     <!-- API REST -->
-                    <div class="card-3d neumorphism text-center hover-tilt magnetic reveal-scale" style="--i: 4">
-                        <div class="p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-green-500 to-green-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d neumorphism text-center hover-tilt  reveal-scale" style="--i: 4">
+                        <div class="p-4">
+                            <div>
                                 <i class="fas fa-code text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">API REST</h3>
@@ -367,26 +344,24 @@
                     </div>
 
                     <!-- MySQL -->
-                    <div class="card-3d glass-morphism text-center hover-tilt magnetic reveal-scale" style="--i: 5">
-                        <div class="p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d glass-morphism text-center hover-tilt  reveal-scale" style="--i: 5">
+                        <div class="p-4">
+                            <div>
                                 <i class="fas fa-database text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">MySQL</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Base de données') }}</p>
                             <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-blue-500 to-cyan-500 h-2 rounded-full"
-                                    style="width: 88%"></div>
+                                <div class="bg-gradient-to-r from-black to-cyan-500 h-2 rounded-full" style="width: 88%">
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Git -->
-                    <div class="card-3d neumorphism text-center hover-tilt magnetic reveal-scale" style="--i: 6">
-                        <div class="p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-gray-600 to-gray-700 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d neumorphism text-center hover-tilt  reveal-scale" style="--i: 6">
+                        <div class="p-4">
+                            <div>
                                 <i class="fab fa-git-alt text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">Git</h3>
@@ -399,11 +374,9 @@
                     </div>
 
                     <!-- Docker -->
-                    <div class="card-3d cyber-border-animated text-center hover-tilt magnetic reveal-scale"
-                        style="--i: 7">
-                        <div class="content p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d cyber-border-animated text-center hover-tilt  reveal-scale" style="--i: 7">
+                        <div class="content p-4">
+                            <div>
                                 <i class="fab fa-docker text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">Docker</h3>
@@ -416,29 +389,28 @@
                     </div>
 
                     <!-- UX/UI -->
-                    <div class="card-3d gradient-border text-center hover-tilt magnetic reveal-scale" style="--i: 8">
-                        <div class="gradient-border-content p-6">
-                            <div
-                                class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center hover-glow electric-border">
+                    <div class="card-3d gradient-border text-center hover-tilt  reveal-scale" style="--i: 8">
+                        <div class="gradient-border-content p-4">
+                            <div>
                                 <i class="fas fa-palette text-white text-3xl"></i>
                             </div>
                             <h3 class="font-bold text-gray-900 mb-3 text-lg">UX/UI</h3>
                             <p class="text-sm text-gray-600 leading-relaxed">{{ __('messages.Design utilisateur') }}</p>
                             <div class="mt-4 w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-gradient-to-r from-purple-500 to-pink-500 h-2 rounded-full"
-                                    style="width: 87%"></div>
+                                <div class="bg-gradient-to-r from-black to-pink-500 h-2 rounded-full" style="width: 87%">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Expertise Areas -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                     <!-- Backend Development -->
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
                         <div class="text-center mb-6">
-                            <div class="w-20 h-20 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center">
-                                <i class="fas fa-server text-blue-600 text-2xl"></i>
+                            <div class="w-20 h-20 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-server text-black text-2xl"></i>
                             </div>
                             <h3 class="text-xl font-semibold text-gray-900">{{ __('messages.Développement Backend') }}
                             </h3>
@@ -454,7 +426,7 @@
                     </div>
 
                     <!-- Mobile Development -->
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
                         <div class="text-center mb-6">
                             <div
                                 class="w-20 h-20 mx-auto mb-4 bg-orange-100 rounded-full flex items-center justify-center">
@@ -473,7 +445,7 @@
                     </div>
 
                     <!-- DevOps & Tools -->
-                    <div class="bg-white p-8 rounded-lg shadow-md">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
                         <div class="text-center mb-6">
                             <div class="w-20 h-20 mx-auto mb-4 bg-green-100 rounded-full flex items-center justify-center">
                                 <i class="fas fa-tools text-green-600 text-2xl"></i>
@@ -495,11 +467,11 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="py-20 bg-white">
+    <section id="projects" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+            <div>
                 <!-- Section Header -->
-                <div class="text-center mb-16">
+                <div class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         {{ __('messages.Mes Projets') }}
                     </h2>
@@ -509,170 +481,285 @@
                 </div>
 
                 <!-- Projects Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     <!-- UZASHOP POS -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                            <i class="fas fa-cash-register text-white text-4xl"></i>
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-black via-gray-800 to-gray-900 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-cash-register text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">Point de Vente</div>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">UZASHOP POS</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Système de point de vente complet avec gestion de stock, facturation et rapports analytiques.') }}
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">UZASHOP POS</h3>
+                                <span class="px-2 py-1 bg-black text-white text-xs rounded-full">Flagship</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Système de point de vente révolutionnaire adapté au contexte africain avec synchronisation
+                                hors ligne et gestion multicaisse.
                             </p>
 
+                            <!-- Technologies -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Flutter</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">MySQL</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">Flutter</span>
+                                <span
+                                    class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">MySQL</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full font-medium">+200
+                                    entreprises</span>
                             </div>
 
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fas fa-eye mr-2"></i>{{ __('messages.Voir démo') }}
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fab fa-github mr-1"></i>{{ __('messages.Code') }}
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fab fa-github mr-2"></i>Code
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ERP Santé -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
-                            <i class="fas fa-heartbeat text-white text-4xl"></i>
+                    <!-- Système d'Information Foncière -->
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-emerald-600 via-green-700 to-teal-800 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-map-marked-alt text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">SIG & Foncier</div>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('messages.ERP Santé') }}</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Système de gestion hospitalière avec dossiers patients, planification et facturation médicale.') }}
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">SIF - GeoSpatial</h3>
+                                <span class="px-2 py-1 bg-green-600 text-white text-xs rounded-full">Innovant</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Plateforme de gestion foncière avec cartographie interactive, résolution des conflits et
+                                archivage numérique pour le secteur Sud-Lukuga.
                             </p>
 
+                            <!-- Technologies -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded">Vue.js</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">PostgreSQL</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">GIS</span>
+                                <span
+                                    class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">PostgreSQL</span>
+                                <span
+                                    class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full font-medium">1500+
+                                    parcelles</span>
                             </div>
 
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="https://zeroconflit.org" target="_blank"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fas fa-external-link-alt mr-2"></i>ZeroConflit.org
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fas fa-external-link-alt mr-1"></i>{{ __('messages.Site web') }}
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fas fa-map mr-2"></i>Cartes
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ERP Hôtellerie -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-700 flex items-center justify-center">
-                            <i class="fas fa-hotel text-white text-4xl"></i>
+                    <!-- Storeman ESCOKIVU -->
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-orange-500 via-amber-600 to-yellow-700 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-warehouse text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">Supply Chain</div>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('messages.ERP Hôtellerie') }}</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Plateforme de gestion hôtelière avec réservations, facturation et gestion de personnel.') }}
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">Storeman</h3>
+                                <span class="px-2 py-1 bg-orange-600 text-white text-xs rounded-full">Enterprise</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Système de gestion d'achats agricoles intégrant logistique, finance, traçabilité et export
+                                pour ESCOKIVU SARL.
                             </p>
 
+                            <!-- Technologies -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-yellow-100 text-yellow-600 text-xs rounded">React</span>
-                                <span class="px-2 py-1 bg-green-100 text-green-600 text-xs rounded">MySQL</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">React</span>
+                                <span
+                                    class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">PostgreSQL</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full font-medium">200+
+                                    agents</span>
                             </div>
 
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fas fa-chart-line mr-2"></i>Analytics
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fas fa-external-link-alt mr-1"></i>{{ __('messages.Site web') }}
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fas fa-users mr-2"></i>Formation
                                 </a>
                             </div>
                         </div>
                     </div>
 
-                    <!-- ERP Agriculture -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-600 flex items-center justify-center">
-                            <i class="fas fa-seedling text-white text-4xl"></i>
+                    <!-- ERP Multisectoriel -->
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-purple-600 via-indigo-700 to-blue-800 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-building text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">ERP Suite</div>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('messages.ERP Agriculture') }}</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Solution de gestion agricole avec suivi des cultures, météo et market place.') }}
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">ERP Multisectoriel</h3>
+                                <span class="px-2 py-1 bg-purple-600 text-white text-xs rounded-full">Suite</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Suite ERP complète pour santé, hôtellerie et agriculture avec modules interconnectés et
+                                tableau de bord unifié.
                             </p>
 
+                            <!-- Technologies -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Flutter</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">IoT</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">Vue.js</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">API
+                                    REST</span>
+                                <span
+                                    class="px-3 py-1 bg-gray-100 text-gray-700 text-xs rounded-full font-medium">Multi-modules</span>
                             </div>
 
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fas fa-play mr-2"></i>{{ __('messages.Voir démo') }}
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fab fa-github mr-1"></i>{{ __('messages.Code') }}
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fas fa-file-alt mr-2"></i>Docs
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Apps Portfolio -->
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-cyan-500 via-blue-600 to-indigo-700 flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-mobile-alt text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">Mobile Suite</div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">Apps Mobile</h3>
+                                <span class="px-2 py-1 bg-blue-600 text-white text-xs rounded-full">Portfolio</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Collection de 10+ applications mobiles Android pour gestion d'entreprises et ONG
+                                humanitaires développées chez AFRISOFT.
+                            </p>
+
+                            <!-- Technologies -->
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">Flutter</span>
+                                <span
+                                    class="px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full font-medium">Java</span>
+                                <span class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel
+                                    API</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">10+
+                                    apps</span>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fab fa-google-play mr-2"></i>Play Store
+                                </a>
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fas fa-code mr-2"></i>Showcase
                                 </a>
                             </div>
                         </div>
                     </div>
 
                     <!-- API Gateway -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center">
-                            <i class="fas fa-network-wired text-white text-4xl"></i>
+                    <div
+                        class="group bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="h-48 bg-gradient-to-br from-gray-700 via-gray-800 to-black flex items-center justify-center relative overflow-hidden">
+                            <div class="absolute inset-0 bg-black/20"></div>
+                            <div class="relative z-10 transform group-hover:scale-110 transition-transform duration-300">
+                                <i class="fas fa-network-wired text-white text-5xl mb-2"></i>
+                                <div class="text-white text-xs font-medium text-center">Microservices</div>
+                            </div>
                         </div>
                         <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">API Gateway</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Passerelle API centralisée avec authentification, rate limiting et monitoring.') }}
+                            <div class="flex items-center justify-between mb-3">
+                                <h3 class="text-xl font-bold text-gray-900">API Gateway</h3>
+                                <span class="px-2 py-1 bg-gray-800 text-white text-xs rounded-full">Core</span>
+                            </div>
+                            <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                                Passerelle API centralisée pour l'écosystème UZASHOP avec authentification JWT, rate
+                                limiting et monitoring avancé.
                             </p>
 
+                            <!-- Technologies -->
                             <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel</span>
-                                <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">Redis</span>
-                                <span class="px-2 py-1 bg-orange-100 text-orange-600 text-xs rounded">Docker</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Laravel</span>
+                                <span
+                                    class="px-3 py-1 bg-red-100 text-red-700 text-xs rounded-full font-medium">Redis</span>
+                                <span
+                                    class="px-3 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full font-medium">JWT</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium">Rate
+                                    Limiting</span>
                             </div>
 
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
+                            <!-- Actions -->
+                            <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                                <a href="#"
+                                    class="flex items-center text-black hover:text-gray-700 text-sm font-semibold transition-colors">
+                                    <i class="fas fa-book mr-2"></i>Documentation
                                 </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fab fa-github mr-1"></i>{{ __('messages.Code') }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Banking -->
-                    <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover">
-                        <div class="h-48 bg-gradient-to-br from-green-600 to-teal-700 flex items-center justify-center">
-                            <i class="fas fa-mobile-alt text-white text-4xl"></i>
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('messages.Mobile Banking') }}</h3>
-                            <p class="text-gray-600 mb-4">
-                                {{ __('messages.Application bancaire mobile avec transferts, paiements et gestion de comptes.') }}
-                            </p>
-
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs rounded">Flutter</span>
-                                <span class="px-2 py-1 bg-orange-100 text-orange-600 text-xs rounded">Java</span>
-                                <span class="px-2 py-1 bg-red-100 text-red-600 text-xs rounded">Laravel API</span>
-                            </div>
-
-                            <div class="flex space-x-3">
-                                <a href="#" class="text-blue-600 hover:text-blue-700 text-sm font-medium">
-                                    <i class="fas fa-eye mr-1"></i>{{ __('messages.Voir démo') }}
-                                </a>
-                                <a href="#" class="text-gray-600 hover:text-gray-700 text-sm font-medium">
-                                    <i class="fab fa-google-play mr-1"></i>{{ __('messages.Play Store') }}
+                                <a href="#"
+                                    class="flex items-center text-gray-500 hover:text-gray-700 text-sm transition-colors">
+                                    <i class="fas fa-cogs mr-2"></i>API
                                 </a>
                             </div>
                         </div>
@@ -681,9 +768,10 @@
 
                 <!-- View All Projects Button -->
                 <div class="text-center mt-12">
-                    <a href="#contact" class="btn-primary">
+                    <a href="#contact"
+                        class="inline-flex items-center px-8 py-4 bg-black text-white rounded-full font-semibold text-lg hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                         {{ __('messages.Voir tous mes projets') }}
-                        <i class="fas fa-arrow-right ml-2"></i>
+                        <i class="fas fa-arrow-right ml-3"></i>
                     </a>
                 </div>
             </div>
@@ -691,11 +779,11 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="py-20 bg-gray-50">
+    <section id="experience" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+            <div>
                 <!-- Section Header -->
-                <div class="text-center mb-16">
+                <div class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         {{ __('messages.Expérience & Réalisations') }}
                     </h2>
@@ -704,162 +792,155 @@
                     </p>
                 </div>
 
-                <!-- Experience Timeline -->
-                <div class="relative">
-                    <!-- Timeline line -->
-                    <div class="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-1 h-full bg-blue-200"></div>
-
-                    <div class="space-y-12">
-                        <!-- Gestionnaire des Projets – Congo Initiative-UCBC -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-blue-600 font-medium mb-1">06/2023 – Présent • Nyunzu‑Kalemie
-                                        (RDC)</div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Gestionnaire des Projets (Project
-                                        Manager)</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">Congo Initiative‑UCBC</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Pilotage technico‑fonctionnel des projets (planification → exécution) avec
-                                            outillage numérique et automatisations.</li>
-                                        <li>• Rédaction de 10+ propositions (4 financées) en cadrant besoins, indicateurs et
-                                            livrables digitaux.</li>
-                                        <li>• Conception et supervision de 10+ études de base (collecte, traitement,
-                                            restitution data‑driven).</li>
-                                    </ul>
+                <!-- Experience Horizontal Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+                    <!-- Gestionnaire des Projets – Congo Initiative-UCBC -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-black">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-project-diagram text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium mb-2">Actuel</span>
+                                    <div class="text-xs text-gray-500">06/2023 – Présent</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pl-8"></div>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Project Manager</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">Congo Initiative‑UCBC • Nyunzu‑Kalemie</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Pilotage technico‑fonctionnel des projets</li>
+                            <li>• 10+ propositions rédigées (4 financées)</li>
+                            <li>• 10+ études de base supervisées</li>
+                        </ul>
+                    </div>
 
-                        <!-- Expert SIF – Congo Initiative-UCBC -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-indigo-600 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-indigo-600 font-medium mb-1">05/2022 – 09/2023 •
-                                        Nyunzu‑Kalemie (RDC)</div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Expert en Système d’Information
-                                        Foncière</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">Congo Initiative‑UCBC</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Architecture et développement d’un système d’archivage numérique (schémas,
-                                            flux, interfaces).</li>
-                                        <li>• Conception et déploiement d’un SIF opérationnel (modèles de données,
-                                            workflows, UI/UX).</li>
-                                        <li>• Mise en production d’un registre numérique des conflits (<a
-                                                href="https://zeroconflit.org" target="_blank"
-                                                class="text-blue-600 underline">zeroconflit.org</a>).</li>
-                                        <li>• Chaîne cartographique complète: acquisition, traitement et édition de 10
-                                            cartes parcellaires (10 villages).</li>
-                                        <li>• Transfert de compétences: formation et coaching des équipes de
-                                            l’administration foncière.</li>
-                                    </ul>
+                    <!-- Expert SIF – Congo Initiative-UCBC -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-blue-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marked-alt text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium mb-2">2022-2023</span>
+                                    <div class="text-xs text-gray-500">05/2022 – 09/2023</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right"></div>
                         </div>
-
-                        <!-- Consultant Ingénieur Développeur Logiciel – ESCOKIVU SARL -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-orange-500 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-orange-600 font-medium mb-1">05/2020 – Présent • Beni (RDC)
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Consultant Ingénieur Développeur
-                                        Logiciel</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">ESCOKIVU SARL</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Conception & développement d’un système de gestion d’achats agricoles
-                                            end‑to‑end.</li>
-                                        <li>• Intégrations métiers: achats, logistique, finance, traçabilité, export (APIs &
-                                            workflows).</li>
-                                        <li>• Déploiement multi‑sites et accompagnement au changement.</li>
-                                        <li>• Formation de 200+ agents sur Storeman et bonnes pratiques d’utilisation.</li>
-                                        <li>• Contribution à l’évolution du système de gestion pour EscoUganda.</li>
-                                    </ul>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Expert SIF</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">Congo Initiative‑UCBC • Nyunzu‑Kalemie</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Architecture système d'archivage numérique</li>
+                            <li>• Déploiement SIF opérationnel</li>
+                            <li>• Registre conflits: <a href="https://zeroconflit.org" target="_blank"
+                                    class="text-black underline">zeroconflit.org</a></li>
+                            <li>• 10 cartes parcellaires (10 villages)</li>
+                        </ul>
+                    </div>
+                    <!-- Consultant Ingénieur Développeur Logiciel – ESCOKIVU SARL -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-orange-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-warehouse text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-orange-100 text-orange-700 text-xs rounded-full font-medium mb-2">En
+                                        cours</span>
+                                    <div class="text-xs text-gray-500">05/2020 – Présent</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pl-8"></div>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Consultant Développeur</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">ESCOKIVU SARL • Beni</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Système gestion achats agricoles end‑to‑end</li>
+                            <li>• Intégrations: logistique, finance, traçabilité</li>
+                            <li>• Formation 200+ agents sur Storeman</li>
+                            <li>• Extension EscoUganda</li>
+                        </ul>
+                    </div>
 
-                        <!-- Gestionnaire des Bases de Données & Dev GIS – IRI-UCBC -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-green-600 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-green-600 font-medium mb-1">01/2020 – 01/2021 • Beni (RDC)
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Gestionnaire des Bases de Données
-                                        & Développeur GIS</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">IRI‑UCBC</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Développement et déploiement d’un SIF + archivage (OICHA/BENI).</li>
-                                        <li>• Opérations terrain: cartographie communautaire, 1 500+ parcelles recensées.
-                                        </li>
-                                        <li>• Formation des agents: collecte, géoréférencement, usage SIF.</li>
-                                    </ul>
+                    <!-- Gestionnaire des Bases de Données & Dev GIS – IRI-UCBC -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-green-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-database text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-green-100 text-green-700 text-xs rounded-full font-medium mb-2">2020-2021</span>
+                                    <div class="text-xs text-gray-500">01/2020 – 01/2021</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right"></div>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Gestionnaire BD & Dév GIS</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">IRI‑UCBC • Beni</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• Déploiement SIF + archivage (OICHA/BENI)</li>
+                            <li>• Cartographie: 1 500+ parcelles recensées</li>
+                            <li>• Formation agents collecte & géoréférencement</li>
+                        </ul>
+                    </div>
 
-                        <!-- Co‑fondateur, Ingénieur Logiciel & Gestionnaire de Projet – UZASHOP -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-purple-600 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pr-8 md:text-right">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-purple-600 font-medium mb-1">02/2019 – Présent • Beni (RDC)
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Co‑fondateur, Ingénieur Logiciel &
-                                        Gestionnaire de Projet</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">UZASHOP</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Conception & développement d’un POS scalable adapté au contexte africain (200+
-                                            entreprises).</li>
-                                        <li>• Industrialisation: documentation technique, versioning, qualité logicielle.
-                                        </li>
-                                        <li>• Lead technique: encadrement d’ingénieurs, priorisation backlog, revues de
-                                            code.</li>
-                                    </ul>
+                    <!-- Co‑fondateur, Ingénieur Logiciel & Gestionnaire de Projet – UZASHOP -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-purple-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-rocket text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-purple-100 text-purple-700 text-xs rounded-full font-medium mb-2">Fondateur</span>
+                                    <div class="text-xs text-gray-500">02/2019 – Présent</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pl-8"></div>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Co-fondateur & CTO</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">UZASHOP • Beni</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• POS scalable: 200+ entreprises</li>
+                            <li>• Documentation technique & versioning</li>
+                            <li>• Lead technique: encadrement équipe</li>
+                            <li>• Priorisation backlog & revues code</li>
+                        </ul>
+                    </div>
 
-                        <!-- Ingénieur Logiciel – AFRISOFT -->
-                        <div class="relative flex items-center">
-                            <div
-                                class="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-8 h-8 bg-rose-600 rounded-full border-4 border-white shadow-lg z-10">
-                            </div>
-                            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
-                                <div class="bg-white p-6 rounded-lg shadow-md">
-                                    <div class="text-sm text-rose-600 font-medium mb-1">02/2018 – 04/2020 • Beni (RDC)
-                                    </div>
-                                    <h3 class="text-xl font-semibold text-gray-900 mb-1">Ingénieur Logiciel</h3>
-                                    <h4 class="text-sm text-gray-600 mb-3">AFRISOFT</h4>
-                                    <ul class="text-sm text-gray-600 space-y-1">
-                                        <li>• Développement de 10+ applications Android orientées métier (gestion
-                                            entreprises & ONG).</li>
-                                        <li>• Contribution aux cycles complets: conception, implémentation, tests et
-                                            livraison.</li>
-                                    </ul>
+                    <!-- Ingénieur Logiciel – AFRISOFT -->
+                    <div
+                        class="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-pink-500">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-mobile-alt text-white text-lg"></i>
+                                </div>
+                                <div>
+                                    <span
+                                        class="inline-block px-3 py-1 bg-pink-100 text-pink-700 text-xs rounded-full font-medium mb-2">2018-2020</span>
+                                    <div class="text-xs text-gray-500">02/2018 – 04/2020</div>
                                 </div>
                             </div>
-                            <div class="hidden md:block md:w-1/2 md:pr-8 md:text-right"></div>
                         </div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Ingénieur Logiciel</h3>
+                        <h4 class="text-sm text-gray-600 mb-3">AFRISOFT • Beni</h4>
+                        <ul class="text-sm text-gray-600 space-y-1">
+                            <li>• 10+ applications Android</li>
+                            <li>• Gestion entreprises & ONG</li>
+                            <li>• Cycles complets: conception → tests</li>
+                            <li>• Technologies: Java, XML, SQLite</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -867,11 +948,11 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-blue-900 text-white">
+    <section id="contact" class="py-16 bg-blue-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="fade-in-up">
+            <div>
                 <!-- Section Header -->
-                <div class="text-center mb-16">
+                <div class="text-center mb-8">
                     <h2 class="text-3xl md:text-4xl font-bold mb-4">
                         {{ __('messages.Contactez-moi') }}
                     </h2>
@@ -880,12 +961,12 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <!-- Contact Information -->
                     <div>
                         <h3 class="text-2xl font-semibold mb-8">{{ __('messages.Informations de contact') }}</h3>
 
-                        <div class="space-y-6">
+                        <div class="space-y-4">
                             <!-- Email -->
                             <div class="flex items-center">
                                 <div class="w-12 h-12 bg-blue-700 rounded-lg flex items-center justify-center mr-4">
@@ -936,15 +1017,15 @@
                             <h4 class="text-lg font-semibold mb-6">{{ __('messages.Suivez-moi') }}</h4>
                             <div class="flex space-x-4">
                                 <a href="https://linkedin.com/in/justin-fimbo" target="_blank"
-                                    class="w-12 h-12 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+                                    class="w-12 h-12 bg-blue-700 hover:bg-black rounded-lg flex items-center justify-center transition-colors duration-200">
                                     <i class="fab fa-linkedin-in text-xl"></i>
                                 </a>
                                 <a href="https://github.com/justin-fimbo" target="_blank"
-                                    class="w-12 h-12 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+                                    class="w-12 h-12 bg-blue-700 hover:bg-black rounded-lg flex items-center justify-center transition-colors duration-200">
                                     <i class="fab fa-github text-xl"></i>
                                 </a>
                                 <a href="https://twitter.com/justin_fimbo" target="_blank"
-                                    class="w-12 h-12 bg-blue-700 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-200">
+                                    class="w-12 h-12 bg-blue-700 hover:bg-black rounded-lg flex items-center justify-center transition-colors duration-200">
                                     <i class="fab fa-twitter text-xl"></i>
                                 </a>
                                 <a href="https://wa.me/243997643592" target="_blank"
@@ -959,7 +1040,7 @@
                     <div>
                         <h3 class="text-2xl font-semibold mb-8">{{ __('messages.Envoyez-moi un message') }}</h3>
 
-                        <form action="{{ route('contact.send') }}" method="POST" class="space-y-6">
+                        <form action="{{ route('contact.send') }}" method="POST" class="space-y-4">
                             @csrf
 
                             <!-- Name -->

@@ -20,7 +20,7 @@
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="fade-in-up">
+            <div >
                 <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">
                     <span class="text-glow">{{ __('messages.Mon Blog') }}</span>
                 </h1>
@@ -45,15 +45,15 @@
     </section>
 
     <!-- Blog Articles Section -->
-    <section id="articles" class="py-20 bg-gray-50">
+    <section id="articles" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Featured Articles -->
-            <div class="mb-16">
+            <div class="mb-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
                     {{ __('messages.Articles en vedette') }}
                 </h2>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-8">
                     @foreach ($articles->where('featured', true) as $article)
                         <article class="glass-card p-0 overflow-hidden card-hover">
                             <div class="relative h-64 md:h-80 overflow-hidden">
@@ -78,10 +78,10 @@
                                 </div>
                             </div>
 
-                            <div class="p-6">
+                            <div class="p-4">
                                 <div class="flex flex-wrap gap-2 mb-3">
                                     @foreach ($article['tags'] as $tag)
-                                        <span class="px-2 py-1 bg-blue-100 text-blue-600 text-xs font-medium rounded-full">
+                                        <span class="px-2 py-1 bg-gray-100 text-black text-xs font-medium rounded-full">
                                             {{ $tag }}
                                         </span>
                                     @endforeach
@@ -98,7 +98,7 @@
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <div
-                                            class="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                                            class="w-10 h-10 bg-gradient-to-r from-black to-purple-500 rounded-full flex items-center justify-center">
                                             <span class="text-white font-bold text-sm">JF</span>
                                         </div>
                                         <div class="ml-3">
@@ -109,7 +109,7 @@
                                     </div>
 
                                     <a href="{{ route('blog.show', $article['slug']) }}"
-                                        class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors duration-200">
+                                        class="inline-flex items-center text-black hover:text-gray-800 font-medium text-sm transition-colors duration-200">
                                         {{ __('messages.Lire plus') }}
                                         <i class="fas fa-arrow-right ml-2"></i>
                                     </a>
@@ -126,7 +126,7 @@
                     {{ __('messages.Tous les articles') }}
                 </h2>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     @foreach ($articles as $article)
                         <article class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                             <div class="relative h-48 overflow-hidden">
@@ -142,7 +142,7 @@
                                 </div>
                             </div>
 
-                            <div class="p-6">
+                            <div class="p-4">
                                 <div class="flex flex-wrap gap-1 mb-3">
                                     @foreach (array_slice($article['tags'], 0, 3) as $tag)
                                         <span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">
@@ -162,7 +162,7 @@
                                 <div class="flex items-center justify-between">
                                     <div class="flex items-center">
                                         <div
-                                            class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
+                                            class="w-8 h-8 bg-gradient-to-r from-black to-purple-500 rounded-full flex items-center justify-center">
                                             <span class="text-white font-bold text-xs">JF</span>
                                         </div>
                                         <div class="ml-2">
@@ -172,7 +172,7 @@
                                     </div>
 
                                     <a href="{{ route('blog.show', $article['slug']) }}"
-                                        class="text-blue-600 hover:text-blue-700 text-sm font-medium transition-colors duration-200">
+                                        class="text-black hover:text-gray-800 text-sm font-medium transition-colors duration-200">
                                         {{ __('messages.Lire') }} →
                                     </a>
                                 </div>
