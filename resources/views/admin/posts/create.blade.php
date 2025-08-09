@@ -189,7 +189,7 @@
                         const d = json.data;
                         alert(
                             `SEO FR: ${d.seo_title_fr}\n${d.seo_description_fr}\n\nSEO EN: ${d.seo_title_en}\n${d.seo_description_en}`
-                            );
+                        );
                     }
                 } catch (e) {
                     status.classList.add('hidden');
