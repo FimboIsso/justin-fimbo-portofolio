@@ -33,7 +33,7 @@
                         <!-- Main Profile Container -->
                         <div
                             class="relative w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl transition-transform duration-300 hover:scale-105">
-                            <img src="{{ asset('images/justin-profile.png') }}" alt="Justin Fimbo"
+                            <img src="{{ asset('images/justin-profile.jpg') }}" alt="Justin Fimbo"
                                 class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
                         </div>
 
